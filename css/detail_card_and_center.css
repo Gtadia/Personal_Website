@@ -6,7 +6,8 @@
     padding-top: 20px;
     padding-bottom: 20px;
     overflow-x: hidden;
-    background: black;
+
+    /* background: black; */
 }
 
 .detail_card_v2 {
@@ -15,7 +16,7 @@
     grid-auto-rows: minmax(75vh, auto);
     padding-top: 20px;
     padding-bottom: 25px;
-    background: black;
+    /* background: black; */
     color: white;   
 }
 
@@ -25,7 +26,7 @@
     align-content: center;
     padding-top: 20px;
     padding-bottom: 20px;
-    background: black;
+    /* background: black; */
 }
 
 .detail_card_v4{
@@ -34,7 +35,7 @@
     grid-auto-rows: minmax(65vh, auto);
     padding-top: 20px;
     padding-bottom: 20px;
-    background: black;
+    /* background: black; */
 }
 
 .detail_card_v5 {
@@ -43,7 +44,7 @@
     grid-auto-rows: minmax(60vh, auto);
     padding-top: 20px;
     padding-bottom: 25px;
-    background: black;
+    /* background: black; */
     color: white;
     align-items: center;
 }
@@ -52,7 +53,7 @@
     display: grid;
     grid-template-columns: 50% 50%;
     grid-auto-rows: minmax(70vh, auto);
-    background: black;
+    /* background: black; */
 }
 
 .detail_card_v7 {
@@ -61,12 +62,12 @@
     grid-auto-rows: minmax(65vh, auto);
     padding-top: 20px;
     padding-bottom: 20px;
-    background: black;
+    /* background: black; */
     line-height: 2;
 }
 
 .detail_card_v8 /* the basic styling */ {
-    background-color: black;
+    /* background-color: black; */
 }
 
 .detail_card_v9 { /* detail_card_v5 but without "align-items: center" */
@@ -75,7 +76,7 @@
     grid-auto-rows: minmax(60vh, auto);
     padding-top: 20px;
     padding-bottom: 25px;
-    background: black;
+    /* background: black; */
     color: white;
 }
 
@@ -120,7 +121,7 @@
         padding-top: 20px;
         padding-bottom: 20px;
         overflow-x: hidden;
-        background: black;
+        /* background: black; */
     }
 
     .detail_card_v2 {
@@ -129,7 +130,7 @@
         grid-auto-rows: minmax(70vh, auto);
         padding-top: 20px;
         padding-bottom: 25px;
-        background: black;
+        /* background: black; */
         color: white; 
     }
 
@@ -140,7 +141,7 @@
         align-content: center;
         padding-top: 20px;
         padding-bottom: 20px;
-        background: black;
+        /* background: black; */
     }    
 
     .detail_card_v4{
@@ -149,14 +150,14 @@
         grid-auto-rows: minmax(40vh, auto);
         padding-top: 20px;
         padding-bottom: 20px;
-        background: black;
+        /* background: black; */
     }
 
     .detail_card_v6 {
         display: grid;
         grid-template-columns: 100%;
         grid-auto-rows: minmax(40vh, auto);
-        background: black;
+        /* background: black; */
     }
 
     .detail_card_v9 {
@@ -165,7 +166,7 @@
         grid-auto-rows: minmax(60vh, auto);
         padding-top: 20px;
         padding-bottom: 25px;
-        background: black;
+        /* background: black; */
         color: white;
     }
 }
