@@ -1,0 +1,246 @@
+<!DOCTYPE html>
+<html lang="en"> 
+    <head> 
+        <meta charset="UTF-8">
+
+        <!--Allows the webpage to work with mobile (well, kind of so don't touch this)-->
+        <meta name="viewport" content="width=device-width, initial-scale=0.86, maximum-scale=5.0, minimum-scale=0.86">
+        <!---->
+
+        <!--Title and Favicon image(the text and image that shows up on the tab bar on the browser)-->
+        <title>AHS Science Olympiad</title>
+        <link rel="icon" type="image/x-icon" href="images/My_Logo.png"> 
+        <!---->
+
+        <!--The stylesheets used for this page-->
+        <link rel="stylesheet" href="css/Index_subpage/index.css">
+        <link rel="stylesheet" href="css/show-on-scroll.css">
+        <link rel="stylesheet" href="css/nav.css">
+        <link rel="stylesheet" href="css/text.css">
+        <link rel="stylesheet" href="css/images.css">
+        <link rel="stylesheet" href="css/detail_card_and_center.css">
+        <!--The stylesheets ends-->
+    </head>
+
+    <body> 
+        <!--navigation bar starts-->
+        <header>
+            <!--The long hoorizontal black bar across the top and the background (and only the black bar)-->
+            <div class="header-blur"></div>
+            <!--header-blue ends-->
+
+            <!--All the elements that make up the navigation bar (except for the black horizontal bar behind these elements)-->
+            <div class="navigation_bar">
+                <!--The logo on the top left corner of the website-->
+                <div class="header-logo">
+                    <a href ="index.html"><img src="images/My_Logo.png" class="logo"></a>
+                </div>  
+                <!--header-logo ends-->
+                
+                <!--When the browser window gets to a certain size, the hamburger menu bar icon appears and all of the subpages on the navigation bar appears only when this button is pressed-->
+                <buttton class="hamburger-menu button-nav" aria-controls="primary-navigation" aria-expanded="false"></buttton>
+                <!--hamburger-menu ends-->
+
+                <!--
+                    navbar_subpage is the div that contains the where all of the subpages of the website are contained with("data-visible="false" 
+                    and id="primary-navigation" (related with 'class="primary-navigation"') is used to allow for smaller windows/mobile devices/transforms the full, desktop 
+                    navigation bar to the hamburger navigaion bar)
+                -->
+                <nav class="navigation_bar_subpages_dimensions" data-visible="false" id="primary-navigation">
+                    
+                    <!--Has the <ul> tag that has all of the subpages of the website-->
+                    <div class="navigation_bar_subpages">
+                        <!--The beginning of the <ul> tag that contains all of the subpages of the website-->
+                        <ul class="primary-navigation">
+                            <li><a class="link" href="index.html">Home</a></li>
+                            <!--The "Projects" <li> tag has submenus of its own, therefore having more line of html than the other <li> tags-->
+                            <!--"Projects" has the id of 0-->
+                            <li>
+                                <!--The main div that has the name of the submenu ("Projects") on the left and the arrowhead/chevron on the right-->
+                                <div class="submenu_with_dropdown">
+                                    <!--The <a> tag that opens the main "Projects" submenu, not the submenu under "Projects" itself-->
+                                    <a class="link" href="events.html">Projects</a>
+                                    <!--Because the arrowhead/chevron has a position of absolute, we need the spacer so that the right flexbox has enough space for the chevron-->
+                                    <div class="spacer">
+                                        <button class="dropdown_arrowhead" id=0>
+                                            <img class="chevron" src="images/chevron.png">
+                                        </button>
+                                    </div>
+                                </div>
+                                
+                                <ul class="dropdown" id=0>
+                                    <li><a class="link" href="results.html">Programming</a></li>
+                                    <li><a class="link" href="location.html">Mechanical</a></li>
+                                </ul>
+                            </li>
+
+                            <li><a class="link" href="calendar.html">Research</a></li>
+                            <li><a class="link" href="about-us.html">About Me</a></li>
+                            <li><a class="link" href="contact.html">Contact</a></li>
+                        </ul>
+                        <!--primary_navigation ends-->
+                    </div>
+                    <!--navigation_bar_subpages ends-->
+                </nav>
+                <!--navigation_bar_subpages_dimensions ends-->
+            </div>
+            <!--navigation_bar ends-->
+
+            <script src="js/navigation_bar/hamburger_menu.js"></script>
+            <script src="js/navigation_bar/dropdown.js"></script>
+        </header>
+        <!--header ends-->
+
+        <!--The image that is visible in the background between the gaps between the detail_cards-->
+        <div class="fixed_background"></div>
+
+        <!--The slideshow that you can see on the banner-->
+        <div class="PlaceInCenter">
+
+
+
+            <div class="slideshow_images">
+                <!-- Photo 1 -->
+                <div class="slideshow_img image_one"></div>
+            
+                <!-- Photo 2 -->
+                <div class="slideshow_img image_two"></div>
+        
+                <!-- Photo 3 -->
+                <div class="slideshow_img image_three"></div>
+            
+                <!-- Photo 4 -->
+                <div class="slideshow_img image_four"></div>
+
+                <!-- Photo 5 (vertical photo test) -->
+                <div class="slideshow_img image_five"></div>
+            </div>            
+            
+            <div class="BannerTitle">
+                <div class="banner-words">
+                    <div class="static-words">I am </div>
+                    <div class="words">
+                        <span class="revolveWords">Min Han</span>
+                        <span class="revolveWords">a programmer</span>
+                        <span class="revolveWords">an engineer</span>
+                        <span class="revolveWords">a mathematician</span>
+                        <span class="revolveWords">a chemist</span>
+                        <span class="revolveWords">a researcher</span>
+                        <span class="revolveWords">a guitarist</span>
+                        <span class="revolveWords">a Christian</span>
+                        <span class="revolveWords">Min Han</span>
+                    </div>
+                </div>
+            </div>
+        </div>
+  
+        <!-- Info Card 1 -->
+        <div class="detail_card_v1">
+            <div class="center_v1 overflow-hidden">
+                <div class="overflow-visible">
+                    <img class="image img_v1 show-on-scroll" src="images/SciOly_Logo.jpg">
+                </div>
+            </div>
+
+            <div class="center_v1 overflow-hidden">
+                <div class="overflow-visible">
+                    <div class="text text_v2 show-on-scroll">
+                        <h1> What is Science Olympiad?</h1>
+                        <div class="text-break"></div>
+                        <p>
+                            Science Olympiad is a STEM competition in which teams of 15 students compete in 23 events from various 
+                            scientific fields, such as Anatomy and Physiology, Tower Building, Rocks and Minerals, Forensics, and 
+                            more. Events can generally be separated into three categories: Study, Build, and Lab.
+                        </p>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <!-- Break -->
+        <div class="break"></div>
+
+        <!-- Info Card 2 -->
+        <div class="detail_card_v4">
+            <div class="center_v1 overflow-hidden">
+                <div class="overflow-visible">
+                    <img class="image img_v1 show-on-scroll" src="images/Students_in_a_lab.jpeg">
+                </div>
+            </div>
+
+            <div class="center_v1 overflow-hidden">
+                <div class="overflow-visible">
+                    <div class="text text_v2 show-on-scroll overflow_visible">
+                        <h1> What are the Benefits of Science Olympiad?</h1>
+                        <div class="text-break"></div>
+                        <p>
+                            The most important benefit of Science Olympiad is the learning and camaraderie 
+                            of like-minded students who work together to solve a problem, build a device, 
+                            and are then rewarded for their efforts! Exposure to science at a higher level!
+                        </p>
+                    </div>                
+                </div>
+            </div>
+        </div>
+
+        <!-- Break -->
+        <div class="break"></div>
+
+        <!-- Info Card 3 -->
+        <div class="detail_card_v4">
+            <div class="center_v1 overflow-hidden">
+                <div class="overflow-visible">
+                    <img class="image img_v1 show-on-scroll" src="images/check-mark-box-icon.jpg">
+                </div>
+            </div>
+
+            <div class="center_v3 overflow-hidden">
+                <div class="overflow-visible">
+                    <div class="text text_v2 show-on-scroll">
+                        <h1>Sign up</h1>
+                        <div class="text-break"></div>
+    
+                        <p> 
+                            Click the shiny button down below. I swear that it's worth your time...
+                        </p>
+                    </div>
+                    <div class="center_v1">
+                        <a href="sign-up.html"><button class="button-index sign-up-btn" type="button"><span class="span-1"></span>Sign Up</button></a>
+                    </div>  
+                </div>
+            </div>
+        </div>
+
+        <!-- Break -->
+        <div class="break"></div>
+        
+        <!--Info Card 4-->
+        <div class="title">
+            <h1 class="title-text">At AHS Science Olympiad, we prioritize winning 🥇, learning 📖, and having fun 😄</h1>
+            <div class="text-break"></div>
+        </div>
+        <div class="detail_card_v2">
+            <div class="center_v2">
+                <img class="image img_v2 show-on-scroll" src="images/trophy.jpeg">
+                <h1>Win</h1>
+                <p class="p-text-medium">Win by competing at UGA, Georgia Tech, and possibly California Institute of Technology (Cal Tech). 🚀</p>
+            </div>
+
+            <div class="center_v2">
+                <img class="image img_v2 show-on-scroll" src="images/Learning.jpeg">
+                <h1>Learn</h1>
+                <p class="p-text-medium">SciOly offers many events. Whether it's building, testing, or lab events, you choose! 👷</p>
+            </div>
+
+            <div class="center_v2">
+                <img class="image img_v2 show-on-scroll" src="images/celebration.jpeg">
+                <h1>Have Fun</h1>
+                <p class="p-text-medium">The Science Olympiad team is here to support your passion for science. We are a team efort. 😆</p>
+            </div>
+        </div>
+
+        <!-- JS script that adds 'is-visible' to any class with 'show-on-scroll' at the end -->
+        <!-- (ex: 'image show-on-scroll' ==becomes==> 'image show-on-scroll is-visible') -->
+        <script src="js/show-on-scroll.js"></script>
+    </body>
+</html>
