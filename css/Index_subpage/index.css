@@ -155,7 +155,7 @@ body:before{
         height: 100%;
         padding: 0;
         color: blue;
-        animation: spin_words 6s infinite; 
+        animation: spin_words 12s infinite; 
     }
 }
 
