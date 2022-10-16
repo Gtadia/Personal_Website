@@ -7,7 +7,17 @@
     padding-bottom: 20px;
     overflow-x: hidden;
 
-    /* background: black; */
+    outline: 10px solid white;
+    margin: 25px;
+}
+
+.detail_card_v1_no_outline{    
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(500px, 1fr));
+    grid-auto-rows: minmax(60vh, auto);
+    padding-top: 20px;
+    padding-bottom: 20px;
+    overflow-x: hidden;
 }
 
 .detail_card_v2 {

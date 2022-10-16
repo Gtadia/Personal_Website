@@ -1,24 +1,28 @@
-.fixed_background {
-    position: fixed; 
-    overflow: hidden;   
-    background-image: url( ../../images/otherBackground.jpg);
-    background-size: cover;
-    background-position: center;
-    width: 100vw;
-    height: 110%;
-    z-index: -1;
-
-    background-color: rgba(0,0,0,0.5);
-    background-blend-mode: multiply;
+/* Gradient Background */
+body {	
+	background: linear-gradient(to bottom, #010332, #100328, #29011C, #43000D, #530005 );
+	background-size: 100%;
+	background-repeat: no-repeat;
+    overflow-x: hidden;
+    right: 0;
 }
-
+body:before{
+	content:'';
+	position: fixed;
+	top: 0;
+	bottom: 0;
+	width: 100%;
+	z-index: -1;
+	background: linear-gradient(to right bottom, rgba(255,255,255,0.2), #2032AC 75%);
+}
+/* Gradient Background */
 
 .event-category-container{
     display: grid;
     grid-template-columns: 1fr;
     grid-template-rows: repeat(6, auto);
     text-align: center;
-    background-color: black;
+    /* background-color: black; */
 }
 
 
@@ -37,7 +41,7 @@
     grid-template-rows: repeat(2, auto);
     border: 3px solid black;
     border-radius: 15px;
-    background-color: grey;
+    background-color: black;
 
     
     max-width: 1000px;
@@ -54,8 +58,8 @@
 
 
 
-#event-img-1 {
-    background-image: url(../../images/1.jpg);
+/* #event-img-1 {
+    background-image: url(images/My_Logo.png);
 }
 #event-img-2 {
     background-image: url(../../images/2.jpg);
@@ -68,8 +72,16 @@
 }
 #event-img-5 {
     background-image: url(../../images/1.jpg);
-}
+} */
 
+.image-events{
+    justify-content: center;
+    align-content: center;
+    overflow: hidden;
+}
+.block-image {
+    width: 100%;
+}
 
 
 .event-info {
@@ -236,8 +248,15 @@
 .card-break{
     position: relative; 
     width: 100%;
-    height: 50vh;
+    height: 5vh;
     background: transparent; 
+}
+
+.bottom-break{
+    position: relative;
+    width: 100%;
+    height: 10vh;
+    background: transparent;
 }
 
 

@@ -13,8 +13,6 @@
     }
 }
 
-
-
 .navigation_bar {
     position: fixed;
     width: 100vw;
@@ -24,11 +22,9 @@
     z-index: 1000;
 }
 
-
-
 .header-logo { 
     position: absolute; 
-    top: calc(0% + 0.55rem);
+    top: calc(0% + 1rem);
     left: 5%;
     display: flex; 
     align-items: center;

@@ -23,12 +23,12 @@
         <!--The stylesheets ends-->
     </head>
 
-    <body> 
+    <body>
         <!--navigation bar starts-->
         <header>
             <!--The long hoorizontal black bar across the top and the background (and only the black bar)-->
             <div class="header-blur"></div>
-            <!--header-blue ends-->
+            <!--header-blur ends-->
 
             <!--All the elements that make up the navigation bar (except for the black horizontal bar behind these elements)-->
             <div class="navigation_bar">
@@ -37,7 +37,7 @@
                     <a href ="index.html"><img src="images/My_Logo.png" class="logo"></a>
                 </div>  
                 <!--header-logo ends-->
-                
+                <link rel="icon" type="image/x-icon" href="images/My_Logo.png"> 
                 <!--When the browser window gets to a certain size, the hamburger menu bar icon appears and all of the subpages on the navigation bar appears only when this button is pressed-->
                 <buttton class="hamburger-menu button-nav" aria-controls="primary-navigation" aria-expanded="false"></buttton>
                 <!--hamburger-menu ends-->
@@ -54,30 +54,51 @@
                         <!--The beginning of the <ul> tag that contains all of the subpages of the website-->
                         <ul class="primary-navigation">
                             <li><a class="link" href="index.html">Home</a></li>
-                            <!--The "Projects" <li> tag has submenus of its own, therefore having more line of html than the other <li> tags-->
-                            <!--"Projects" has the id of 0-->
+                            <!--The "Events" <li> tag has submenus of its own, therefore having more line of html than the other <li> tags-->
+                            <!--"Events" has the id of 0-->
                             <li>
-                                <!--The main div that has the name of the submenu ("Projects") on the left and the arrowhead/chevron on the right-->
+                                <!--The main div that has the name of the submenu ("Events") on the left and the arrowhead/chevron on the right-->
                                 <div class="submenu_with_dropdown">
-                                    <!--The <a> tag that opens the main "Projects" submenu, not the submenu under "Projects" itself-->
-                                    <a class="link" href="events.html">Projects</a>
+                                    <!--The <a> tag that opens the main "Events" submenu, not the submenu under "Events" itself-->
+                                    <a class="link" href="projects.html">Projects</a>
                                     <!--Because the arrowhead/chevron has a position of absolute, we need the spacer so that the right flexbox has enough space for the chevron-->
                                     <div class="spacer">
                                         <button class="dropdown_arrowhead" id=0>
                                             <img class="chevron" src="images/chevron.png">
                                         </button>
                                     </div>
+                                    <!--spacer ends-->
                                 </div>
+                                <!--submenu-with-dropdown ends-->
                                 
                                 <ul class="dropdown" id=0>
-                                    <li><a class="link" href="results.html">Programming</a></li>
+                                    <li><a class="link" href="results.html">Software</a></li>
                                     <li><a class="link" href="location.html">Mechanical</a></li>
                                 </ul>
                             </li>
+                            <!--Events ends-->
 
                             <li><a class="link" href="calendar.html">Research</a></li>
-                            <li><a class="link" href="about-us.html">About Me</a></li>
-                            <li><a class="link" href="contact.html">Contact</a></li>
+
+                            <!--The "Resources" submenu is basically the same as the "Events" submenu-->
+                            <!--"Resources" has the id of 1-->
+                            <li>
+                                <div class="submenu_with_dropdown">
+                                    <a class="link" href="resources.html">About Me</a>
+                                    <div class="spacer">
+                                        <button class="dropdown_arrowhead" id=1>
+                                            <img class="chevron" src="images/chevron.png">
+                                        </button>
+                                    </div>
+                                </div>
+                                <ul class="dropdown" id=1>
+                                    <li><a class="link" href="meeting-notes.html">Education</a></li>
+                                    <li><a class="link" href="event-notes.html">Internships</a></li>
+                                </ul>
+                            </li>
+                            <!--Resources ends-->
+
+                            <li><a class="link" href="contact.html">Research</a></li>
                         </ul>
                         <!--primary_navigation ends-->
                     </div>
@@ -143,9 +164,11 @@
                         <h1> About me</h1>
                         <div class="text-break"></div>
                         <p>
-                            Stuff About Me
+                            I'm a driven person that has the drive and motivation to achieve great feats.
                         </p>
                     </div>
+
+                    <a href="sign-up.html"><button class="button-index" type="button" ><span class="span-1"></span>More</button></a>  
                 </div>
             </div>
         </div>
@@ -154,7 +177,7 @@
         <div class="break"></div>
 
         <!-- Info Card 2 -->
-        <div class="detail_card_v4">
+        <div class="detail_card_v1_no_outline">
             <div class="center_v1 overflow-hidden">
                 <div class="overflow-visible">
                     <img class="image img_v1 show-on-scroll" src="images/Students_in_a_lab.jpeg">
@@ -167,9 +190,10 @@
                         <h1> Education</h1>
                         <div class="text-break"></div>
                         <p>
-                            Details
+                            Currently attending Alpharetta High School. I'm also doing dual enrollment with Georgia Institute of Technology, Georgia State University, and Gwinnett Technical College.
                         </p>
-                    </div>                
+                    </div>   
+                    <a href="sign-up.html"><button class="button-index" type="button" ><span class="span-1"></span>More</button></a>               
                 </div>
             </div>
         </div>
@@ -178,27 +202,28 @@
         <div class="break"></div>
         
         <!--Info Card 4-->
-        <div class="title">
-            <h1 class="title-text">More about me</h1>
-            <div class="text-break"></div>
-        </div>
-        <div class="detail_card_v2">
-            <div class="center_v2">
-                <img class="image img_v2 show-on-scroll" src="images/trophy.jpeg">
-                <h1>Accomplishments</h1>
-                <p class="p-text-medium">Stuff</p>
+        <div class="encase">
+            <div class="title">
+                <h1 class="title-text">More about me</h1>
             </div>
-
-            <div class="center_v2">
-                <img class="image img_v2 show-on-scroll" src="images/Learning.jpeg">
-                <h1>Learn</h1>
-                <p class="p-text-medium">More stuff</p>
-            </div>
-
-            <div class="center_v2">
-                <img class="image img_v2 show-on-scroll" src="images/celebration.jpeg">
-                <h1>Projects</h1>
-                <p class="p-text-medium">EVEN More Stuff</p>
+            <div class="detail_card_v2">
+                <div class="center_v2">
+                    <img class="image img_v2 show-on-scroll" src="images/trophy.jpeg">
+                    <h1>Accomplishments</h1>
+                    <p class="p-text-medium">Stuff</p>
+                </div>
+    
+                <div class="center_v2">
+                    <img class="image img_v2 show-on-scroll" src="images/Learning.jpeg">
+                    <h1>Learn</h1>
+                    <p class="p-text-medium">More stuff</p>
+                </div>
+    
+                <div class="center_v2">
+                    <img class="image img_v2 show-on-scroll" src="images/celebration.jpeg">
+                    <h1>Projects</h1>
+                    <p class="p-text-medium">EVEN More Stuff</p>
+                </div>
             </div>
         </div>
 
