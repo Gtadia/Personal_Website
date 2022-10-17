@@ -76,10 +76,6 @@
     line-height: 2;
 }
 
-.detail_card_v8 /* the basic styling */ {
-    /* background-color: black; */
-}
-
 .detail_card_v9 { /* detail_card_v5 but without "align-items: center" */
     display: grid;
     grid-template-columns: repeat(4, 25%);
@@ -125,13 +121,23 @@
 @media screen and (max-width: 900px) {
     .detail_card_v1 {    
         display: grid;
-        /* grid-template-columns: repeat(auto-fit, minmax(500px, 1fr)); */
+        grid-template-columns: repeat(auto-fit, minmax(500px, 1fr));
         grid-template-columns: 100%;
         grid-auto-rows: minmax(30vh, auto);
         padding-top: 20px;
         padding-bottom: 20px;
         overflow-x: hidden;
         /* background: black; */
+    }
+
+    .detail_card_v1_no_outline{    
+        display: grid;
+        grid-template-columns: repeat(auto-fit, minmax(500px, 1fr));
+        grid-template-columns: 100%;
+        grid-auto-rows: minmax(30vh, auto);
+        padding-top: 20px;
+        padding-bottom: 20px;
+        overflow-x: hidden;
     }
 
     .detail_card_v2 {

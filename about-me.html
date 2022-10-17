@@ -1,13 +1,11 @@
 <!DOCTYPE html>
 <html>
     <head>
-        <meta charset="UTF-8">
-        <!---->
         <meta name="viewport" content="width=device-width, initial-scale=0.86, maximum-scale=5.0, minimum-scale=0.86">
 
-        <title>Location</title>
+        <title>About Me</title>
         <link rel="icon" type="image/x-icon" href="images/Alpharetta_Logo.png"> 
-        
+
         <link rel="stylesheet" href="css/subpages-styles.css">
         <link rel="stylesheet" href="css/nav.css">
         <link rel="stylesheet" href="css/show-on-scroll.css">
@@ -21,16 +19,16 @@
         <header>
             <!--The long hoorizontal black bar across the top and the background (and only the black bar)-->
             <div class="header-blur"></div>
-            <!--header-blue ends-->
+            <!--header-blur ends-->
 
             <!--All the elements that make up the navigation bar (except for the black horizontal bar behind these elements)-->
             <div class="navigation_bar">
                 <!--The logo on the top left corner of the website-->
                 <div class="header-logo">
-                    <a href ="index.html"><img src="images/Alpharetta_Logo.png" class="logo"></a>
+                    <a href ="index.html"><img src="images/My_Logo.png" class="logo"></a>
                 </div>  
                 <!--header-logo ends-->
-                <link rel="icon" type="image/x-icon" href="images/Alpharetta_Logo.png"> 
+                <link rel="icon" type="image/x-icon" href="images/My_Logo.png"> 
                 <!--When the browser window gets to a certain size, the hamburger menu bar icon appears and all of the subpages on the navigation bar appears only when this button is pressed-->
                 <buttton class="hamburger-menu button-nav" aria-controls="primary-navigation" aria-expanded="false"></buttton>
                 <!--hamburger-menu ends-->
@@ -53,7 +51,7 @@
                                 <!--The main div that has the name of the submenu ("Events") on the left and the arrowhead/chevron on the right-->
                                 <div class="submenu_with_dropdown">
                                     <!--The <a> tag that opens the main "Events" submenu, not the submenu under "Events" itself-->
-                                    <a class="link" href="events.html">Events</a>
+                                    <a class="link" href="projects.html">Projects</a>
                                     <!--Because the arrowhead/chevron has a position of absolute, we need the spacer so that the right flexbox has enough space for the chevron-->
                                     <div class="spacer">
                                         <button class="dropdown_arrowhead" id=0>
@@ -65,19 +63,17 @@
                                 <!--submenu-with-dropdown ends-->
                                 
                                 <ul class="dropdown" id=0>
-                                    <li><a class="link" href="results.html">Results</a></li>
-                                    <li><a class="link" href="location.html">Location</a></li>
+                                    <li><a class="link" href="software.html">Software</a></li>
+                                    <li><a class="link" href="mechanical.html">Mechanical</a></li>
                                 </ul>
                             </li>
                             <!--Events ends-->
-
-                            <li><a class="link" href="calendar.html">Calendar</a></li>
 
                             <!--The "Resources" submenu is basically the same as the "Events" submenu-->
                             <!--"Resources" has the id of 1-->
                             <li>
                                 <div class="submenu_with_dropdown">
-                                    <a class="link" href="resources.html">Resources</a>
+                                    <a class="link" href="about-me.html">About Me</a>
                                     <div class="spacer">
                                         <button class="dropdown_arrowhead" id=1>
                                             <img class="chevron" src="images/chevron.png">
@@ -85,14 +81,13 @@
                                     </div>
                                 </div>
                                 <ul class="dropdown" id=1>
-                                    <li><a class="link" href="meeting-notes.html">Meeting Notes</a></li>
-                                    <li><a class="link" href="event-notes.html">Event Notes</a></li>
+                                    <li><a class="link" href="education.html">Education</a></li>
+                                    <li><a class="link" href="internships.html">Internships</a></li>
                                 </ul>
                             </li>
                             <!--Resources ends-->
 
-                            <li><a class="link" href="about-us.html">About Us</a></li>
-                            <li><a class="link" href="contact.html">Contact</a></li>
+                            <li><a class="link" href="research.html">Research</a></li>
                         </ul>
                         <!--primary_navigation ends-->
                     </div>
@@ -102,6 +97,7 @@
             </div>
             <!--navigation_bar ends-->
 
+
             <script src="js/navigation_bar/hamburger_menu.js"></script>
             <script src="js/navigation_bar/dropdown.js"></script>
         </header>
@@ -110,30 +106,19 @@
         <!--banner starts-->
         <div class="banner">
             <div class="banner-title">
-                <h1>Locations</h1>
+                <h1>About Me</h1>
             </div>
             <div class="banner-image"></div>
         </div>
         <!--banner ends-->
 
-        <!--details starts-->
-        <div class="detail_card_v8">
-            <div class="header_text_v1">
-                Locations
-                <div class="text-break"></div>
-            </div>
 
-            <div class="embed-box-container">
-                <div class="embed-box">
-                    <iframe src="https://www.google.com/maps/d/u/5/embed?mid=1bKT7dsWq3JNgyQYwwnrub98obRnPADk&ehbc=2E312F" width=100% height=100%></iframe>
-                </div>
-            </div>
+        <!--Break starts-->
+        <div class="break"></div>
+        <!--Break ends-->
 
-            <div class="hypertext-link">
-                <p>If the Google Maps above doesn't work, you can try opening <a href="https://www.google.com/maps/d/u/5/embed?mid=1bKT7dsWq3JNgyQYwwnrub98obRnPADk&ehbc=2E312F">this</a> link instead.</p>
-            </div>    
-            <script src="js/show-on-scroll.js"></script>
-        </div>
-        <!--details ends-->
+    
+        <!--JS scripts begins-->
+        <script src="js/show-on-scroll.js"></script> <!--Detects when images are on the viewport/screen (this allows us to have elements show up on the screen when they are in the viewport)-->
     </body>
 </html>
