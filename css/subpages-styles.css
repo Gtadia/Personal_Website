@@ -172,22 +172,48 @@ body:before{
 }
 
 
-
-/* detail card for the captians */
-.detail_card_v2 h1{
-    font-size: 25px;
-    margin-bottom: 25px;
+.button-index {
+    width: 200px; 
+    padding: 15px 0;
+    text-align: center;
+    margin: 20px;
+    border-radius: 25px;
+    font-weight: bold;
+    border: 2px solid #009688;
+    background: transparent; 
+    color: #fff;
+    cursor: pointer;
+    position: relative; 
+    overflow: hidden; 
 }
 
+.span-1{
+    background: #009688;
+    height: 100%; 
+    width: 0; 
+    border-radius: 25px; 
+    position: absolute; 
+    left: 0;
+    bottom: 0; 
+    z-index: -1;
+    transition: 0.5s; 
+    z-index: -1;  
+}
+.sign-up-btn {
+    max-width: 150px;
+}
+button:hover span{
+    width: 100%;
+}
 
+.push{
+    bottom: 0;
+}
 
 @media (max-width: 1024px) {
     *{
         overflow-x: hidden;
     }
-
-
-
     /* Makes the list of captains go from being listed out horizontally to vertically */
     .detail_card_v2 {
         display: grid;
