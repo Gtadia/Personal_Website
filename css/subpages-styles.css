@@ -98,7 +98,11 @@ body:before{
     padding: 25px 0 0 20px;
 }
 
-
+.scrollable-socials{
+    overflow-x: scroll;
+    height: minmax(20px, 40px);
+    justify-content: right;
+}
 
 /* used for Mrs. Adegbaju's picture on "about-us" */
 .images {
@@ -160,7 +164,7 @@ body:before{
 .break {
     position: relative; 
     width: 100%;
-    height: 50vh;
+    height: 25vh;
     background: transparent; 
 }
 

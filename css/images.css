@@ -62,3 +62,14 @@
     background-position: center;
     background-size: cover;
 }
+
+.img_icons{
+    margin: 0.5em auto;
+
+    position: relative;
+    aspect-ratio: 1;
+    height: 3rem;
+
+    overflow: hidden;
+    border: none;
+}

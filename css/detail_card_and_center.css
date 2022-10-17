@@ -6,18 +6,7 @@
     padding-top: 20px;
     padding-bottom: 20px;
     overflow-x: hidden;
-
-    outline: 10px solid white;
-    margin: 25px;
-}
-
-.detail_card_v1_no_outline{    
-    display: grid;
-    grid-template-columns: repeat(auto-fit, minmax(500px, 1fr));
-    grid-auto-rows: minmax(60vh, auto);
-    padding-top: 20px;
-    padding-bottom: 20px;
-    overflow-x: hidden;
+    color: white;
 }
 
 .detail_card_v2 {
@@ -31,7 +20,18 @@
 }
 
 .detail_card_v3 {
-    color: white; 
+    display: grid;
+    color: white;
+    grid-template-columns: 100%;
+    height: 15vh; 
+    padding-top: 20px;
+    padding-bottom: 20px;
+    overflow-x: hidden;
+    justify-content: center;
+    padding: 2.5vh 3vw;
+
+    outline: 10px solid white;
+    margin: 25px;
 }
 
 .detail_card_v4{
@@ -43,16 +43,16 @@
     color: white;
 }
 
-.detail_card_v5 {
+.detail_card_v5 {    
     display: grid;
-    grid-template-columns: repeat(4, 25%);
-    grid-auto-rows: minmax(60vh, auto);
+    grid-template-columns: 100%;
+    grid-auto-rows: minmax(7vh, auto);
     padding-top: 20px;
-    padding-bottom: 25px;
-    /* background: black; */
+    padding-bottom: 20px;
+    overflow-x: hidden;
     color: white;
-    align-items: center;
 }
+
 
 .detail_card_v6 {
     display: grid;
@@ -81,6 +81,20 @@
     justify-content: center;
 }
 
+.detail_card_v9{
+    display: grid;
+    grid-template-columns: 100%;
+    grid-auto-rows: 10% 90%;
+    padding-top: 20px;
+    padding-bottom: 20px;
+    overflow-x: hidden;
+    color: white;
+}
+
+.outline{
+    outline: 10px solid white;
+    margin: 25px;
+}
 
 /* Center */
 .center_v1 {
@@ -116,7 +130,6 @@
 @media screen and (max-width: 900px) {
     .detail_card_v1 {    
         display: grid;
-        grid-template-columns: repeat(auto-fit, minmax(500px, 1fr));
         grid-template-columns: 100%;
         grid-auto-rows: minmax(30vh, auto);
         padding-top: 20px;
