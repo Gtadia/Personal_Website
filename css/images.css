@@ -64,11 +64,13 @@
 }
 
 .img_icons{
-    margin: 0.5em auto;
+    margin: 0.1em 0.5em;
 
     position: relative;
     aspect-ratio: 1;
     height: 3rem;
+    border-radius: 15%;
+    background-color: white;
 
     overflow: hidden;
     border: none;

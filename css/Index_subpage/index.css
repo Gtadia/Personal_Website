@@ -232,7 +232,7 @@ button:hover span{
   height: 100%;
   
   transform: translateX( 100% );
-  background-image: url(../../images/image.jpg );
+  background-image: url(../../images/MotherboardCircuitWallpaper.jpeg );
   background-color: rgba(0,0,0,0.7);
   background-blend-mode: multiply;
   background-size: cover;
@@ -241,19 +241,19 @@ button:hover span{
   animation: opaqTransition 50s cubic-bezier(0, 0, 0, 1) infinite;
 }
 .slideshow_img.image_two {
-  background-image: url( ../../images/1.jpg);
+  background-image: url( ../../images/atomWallpaper.jpg);
   animation-delay: 10s;
 }
 .slideshow_img.image_three {
-  background-image: url( ../../images/scene.jpeg );
+  background-image: url( ../../images/GuitarWallpaper.jpeg );
   animation-delay: 20s;
 }
 .slideshow_img.image_four {
-  background-image: url( ../../images/alsobigboi.jpeg );
+  background-image: url( ../../images/SpaceWallpaper.jpeg );
   animation-delay: 30s;
 }
 .slideshow_img.image_five {
-  background-image: url( ../../images/verticalPicTest.jpeg );
+  background-image: url( ../../images/ClockEscapementWallpaper.jpg );
   animation-delay: 40s;
 }
 @keyframes opaqTransition {
