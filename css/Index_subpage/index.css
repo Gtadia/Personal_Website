@@ -46,6 +46,7 @@ body:before{
     font-weight: bolder;
 
     position: absolute;
+    top: calc(50% - 4vh);
     box-sizing: content-box;
     background-color: white;
 

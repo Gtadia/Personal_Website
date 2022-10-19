@@ -15,26 +15,10 @@
     grid-auto-rows: minmax(75vh, auto);
     padding-top: 20px;
     padding-bottom: 25px;
-    /* background: black; */
     color: white;   
 }
 
-.detail_card_v3 {
-    display: grid;
-    color: white;
-    grid-template-columns: 100%;
-    height: 15vh; 
-    padding-top: 20px;
-    padding-bottom: 20px;
-    overflow-x: hidden;
-    justify-content: center;
-    padding: 2.5vh 3vw;
-
-    outline: 10px solid white;
-    margin: 25px;
-}
-
-.detail_card_v4{
+.detail_card_v3{
     display: grid;
     grid-template-columns: 60% 40%;
     grid-auto-rows: minmax(65vh, auto);
@@ -43,7 +27,7 @@
     color: white;
 }
 
-.detail_card_v5 {    
+.detail_card_v4 {    
     display: grid;
     grid-template-columns: 100%;
     grid-auto-rows: minmax(7vh, auto);
@@ -53,25 +37,14 @@
     color: white;
 }
 
-
-.detail_card_v6 {
+.detail_card_v5 {
     display: grid;
     grid-template-columns: 50% 50%;
     grid-auto-rows: minmax(70vh, auto);
     color: white;
 }
 
-.detail_card_v7 {
-    display: grid;
-    grid-template-columns: 60% 40%;
-    grid-auto-rows: minmax(65vh, auto);
-    padding-top: 20px;
-    padding-bottom: 20px;
-    /* background: black; */
-    line-height: 2;
-}
-
-.detail_card_v8 { /* detail_card_v5 but without "align-items: center" */
+.detail_card_v6 {
     display: grid;
     grid-template-columns: 100%;
     grid-auto-rows: 55%, 10%, 25%, 5%;
@@ -81,7 +54,7 @@
     justify-content: center;
 }
 
-.detail_card_v9{
+.detail_card_v7{
     display: grid;
     grid-template-columns: 100%;
     grid-auto-rows: 10% 90%;
@@ -94,6 +67,10 @@
 .outline{
     outline: 10px solid white;
     margin: 25px;
+}
+
+.large-padding{
+    padding: 0 15vw;
 }
 
 /* Center */
@@ -135,17 +112,6 @@
         padding-top: 20px;
         padding-bottom: 20px;
         overflow-x: hidden;
-        /* background: black; */
-    }
-
-    .detail_card_v1_no_outline{    
-        display: grid;
-        grid-template-columns: repeat(auto-fit, minmax(500px, 1fr));
-        grid-template-columns: 100%;
-        grid-auto-rows: minmax(30vh, auto);
-        padding-top: 20px;
-        padding-bottom: 20px;
-        overflow-x: hidden;
     }
 
     .detail_card_v2 {
@@ -154,43 +120,17 @@
         grid-auto-rows: minmax(70vh, auto);
         padding-top: 20px;
         padding-bottom: 25px;
-        /* background: black; */
         color: white; 
     }
 
-    .detail_card_v3 {
-        display: flex;
-        flex-direction: column;
-        column-width: 100%;
-        align-content: center;
-        padding-top: 20px;
-        padding-bottom: 20px;
-        /* background: black; */
-    }    
-
-    .detail_card_v4{
-        display: grid;
-        grid-template-columns: 100%;
-        grid-auto-rows: minmax(40vh, auto);
-        padding-top: 20px;
-        padding-bottom: 20px;
-        /* background: black; */
-    }
-
-    .detail_card_v6 {
+    .detail_card_v5 {
         display: grid;
         grid-template-columns: 100%;
         grid-auto-rows: minmax(40vh, auto);
         color: white;
     }
 
-    .detail_card_v9 {
-        display: grid;
-        grid-template-columns: 100%;
-        grid-auto-rows: minmax(60vh, auto);
-        padding-top: 20px;
-        padding-bottom: 25px;
-        /* background: black; */
-        color: white;
+    .large-padding{
+        padding: 3vw;
     }
 }

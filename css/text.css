@@ -20,12 +20,12 @@
     gap: 10px;
 }
 
-.p-text-medium {
+.medium-text-font {
     font-size: 3vh;
     padding: 0 3vw;
 }
 
-.medium-padding {
+.medium-text-padding {
     padding: 0 3vw 1vh 3vw;
 }
 
