@@ -339,6 +339,5 @@ button:hover span{
         grid-auto-rows: repeat(3, 33.34%);
         padding-top: 20px;
         padding-bottom: 25px;
-        background: black;
     }
 }

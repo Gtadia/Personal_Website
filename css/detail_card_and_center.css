@@ -64,6 +64,16 @@
     color: white;
 }
 
+.detail_card_v8{
+    display: grid;
+    grid-template-columns: 100%;
+    grid-auto-rows: 55% 7.5% 30% 7.5%;
+    padding-top: 20px;
+    padding-bottom: 25px;
+    color: white;
+    justify-content: center;
+}
+
 .outline{
     outline: 10px solid white;
     margin: 25px;

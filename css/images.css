@@ -75,3 +75,10 @@
     overflow: hidden;
     border: none;
 }
+
+.test {
+    display: grid;
+    justify-content: center;
+    align-items: center;
+    block-size: fit-content;
+}
