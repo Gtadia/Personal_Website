@@ -19,6 +19,7 @@
 
 .img_v2 {
     border: 1em solid #fff;
+    background-color: white;
     border-radius: .25em;
     box-shadow: 1em 1em 2em .25em rgba(0,0,0,.2);
     margin: 2em auto;
