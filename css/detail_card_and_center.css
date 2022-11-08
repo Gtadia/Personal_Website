@@ -119,6 +119,12 @@
     background-color: white;
 }
 
+.line_divide_thick {
+    height: 2.5em;
+    width: 100%;
+    background-color: white;
+}
+
 .title_text {
     font-size: 10em;
 }
