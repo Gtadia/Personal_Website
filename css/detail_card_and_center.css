@@ -113,10 +113,10 @@
     overflow: visible;
 }
 
-<<<<<<< HEAD
 .max_width {
     max-width: 1000px;  
-=======
+}
+
 .line_divide {
     height: 0.5em;
     width: 100%;
@@ -131,7 +131,6 @@
 
 .title_text {
     font-size: 10em;
->>>>>>> d194f2e77567fbdbeb2a0f3273f13e7e1865a023
 }
 
 @media screen and (max-width: 900px) {
