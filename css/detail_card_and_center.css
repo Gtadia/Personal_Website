@@ -113,6 +113,9 @@
     overflow: visible;
 }
 
+.max_width {
+    max-width: 1000px;  
+}
 
 @media screen and (max-width: 900px) {
     .detail_card_v1 {    

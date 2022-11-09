@@ -36,6 +36,9 @@ body:before{
     text-transform: uppercase;
 }
 
+.banner-text{
+    font-size: 10vh;
+}
 
 
 .banner-image {

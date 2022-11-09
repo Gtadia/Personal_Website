@@ -25,6 +25,11 @@
     padding: 0 3vw;
 }
 
+.large-text-font{
+    font-size: 8vh;
+    padding: 0 3vw;
+}
+
 .medium-text-padding {
     padding: 0 3vw 1vh 3vw;
 }
