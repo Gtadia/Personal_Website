@@ -8,126 +8,99 @@
         <meta name="viewport" content="width=device-width, initial-scale=0.86, maximum-scale=5.0, minimum-scale=0.86">
         <!---->
 
-        <!--Title and Favicon image(the text and image that shows up on the tab bar on the browser)-->
         <title>Home Page</title>
         <link rel="icon" type="image/x-icon" href="images/My_Logo.png"> 
-        <!---->
 
-        <!--The stylesheets used for this page-->
         <link rel="stylesheet" href="css/Index_subpage/index.css">
         <link rel="stylesheet" href="css/show-on-scroll.css">
         <link rel="stylesheet" href="css/nav.css">
         <link rel="stylesheet" href="css/text.css">
         <link rel="stylesheet" href="css/images.css">
         <link rel="stylesheet" href="css/detail_card_and_center.css">
-        <!--The stylesheets ends-->
     </head>
 
+    <!--navigation bar starts-->
+    <header>
+        <!--The long hoorizontal black bar across the top and the background (and only the black bar)-->
+        <div class="header-blur"></div>
+
+        <!--All the elements that make up the navigation bar (except for the black horizontal bar behind these elements)-->
+        <div class="navigation_bar">
+            <div class="header-logo">
+                <a href ="index.html"><img src="images/My_Logo.png" class="logo"></a>
+            </div>  
+            <link rel="icon" type="image/x-icon" href="images/My_Logo.png"> 
+            <!--When the browser window gets to a certain size, the hamburger menu bar icon appears and all of the subpages on the navigation bar appears only when this button is pressed-->
+            <buttton class="hamburger-menu button-nav" aria-controls="primary-navigation" aria-expanded="false"></buttton>
+
+            <!--
+                navbar_subpage is the div that contains the where all of the subpages of the website are contained with("data-visible="false" 
+                and id="primary-navigation" (related with 'class="primary-navigation"') is used to allow for smaller windows/mobile devices/transforms the full, desktop 
+                navigation bar to the hamburger navigaion bar)
+            -->
+            <nav class="navigation_bar_subpages_dimensions" data-visible="false" id="primary-navigation">
+                
+                <!--Has the <ul> tag that has all of the subpages of the website-->
+                <div class="navigation_bar_subpages">
+                    <!--The beginning of the <ul> tag that contains all of the subpages of the website-->
+                    <ul class="primary-navigation">
+                        <li><a class="link" href="index.html">Home</a></li>
+                        <!--The "Events" <li> tag has submenus of its own, therefore having more line of html than the other <li> tags-->
+                        <!--"Events" has the id of 0-->
+                        <li>
+                            <!--The main div that has the name of the submenu ("Events") on the left and the arrowhead/chevron on the right-->
+                            <div class="submenu_with_dropdown">
+                                <!--The <a> tag that opens the main "Events" submenu, not the submenu under "Events" itself-->
+                                <a class="link" href="projects.html">Projects</a>
+                                <!--Because the arrowhead/chevron has a position of absolute, we need the spacer so that the right flexbox has enough space for the chevron-->
+                                <div class="spacer">
+                                    <button class="dropdown_arrowhead" id=0>
+                                        <img class="chevron" src="images/chevron.png">
+                                    </button>
+                                </div>
+                            </div>
+                            
+                            <ul class="dropdown" id=0>
+                                <li><a class="link" href="software.html">Software</a></li>
+                                <li><a class="link" href="mechanical.html">Mechanical</a></li>
+                                <li><a class="link" href="research.html">Research</a></li>
+                            </ul>
+                        </li>
+
+                        <!--"Resources" has the id of 1-->
+                        <li>
+                            <div class="submenu_with_dropdown">
+                                <a class="link" href="about-me.html">About Me</a>
+                                <div class="spacer">
+                                    <button class="dropdown_arrowhead" id=1>
+                                        <img class="chevron" src="images/chevron.png">
+                                    </button>
+                                </div>
+                            </div>
+                            <ul class="dropdown" id=1>
+                                <li><a class="link" href="education.html">Education</a></li>
+                                <li><a class="link" href="internships.html">Internships</a></li>
+                            </ul>
+                        </li>
+
+                        <li><a class="link" href="contact.html">Contact Me</a></li>
+                    </ul>
+                </div>
+            </nav>
+        </div>
+
+        <script src="js/navigation_bar/hamburger_menu.js"></script>
+        <script src="js/navigation_bar/dropdown.js"></script>
+    </header>
+
     <body>
-        <!--navigation bar starts-->
-        <header>
-            <!--The long hoorizontal black bar across the top and the background (and only the black bar)-->
-            <div class="header-blur"></div>
-            <!--header-blur ends-->
-
-            <!--All the elements that make up the navigation bar (except for the black horizontal bar behind these elements)-->
-            <div class="navigation_bar">
-                <!--The logo on the top left corner of the website-->
-                <div class="header-logo">
-                    <a href ="index.html"><img src="images/My_Logo.png" class="logo"></a>
-                </div>  
-                <!--header-logo ends-->
-                <link rel="icon" type="image/x-icon" href="images/My_Logo.png"> 
-                <!--When the browser window gets to a certain size, the hamburger menu bar icon appears and all of the subpages on the navigation bar appears only when this button is pressed-->
-                <buttton class="hamburger-menu button-nav" aria-controls="primary-navigation" aria-expanded="false"></buttton>
-                <!--hamburger-menu ends-->
-
-                <!--
-                    navbar_subpage is the div that contains the where all of the subpages of the website are contained with("data-visible="false" 
-                    and id="primary-navigation" (related with 'class="primary-navigation"') is used to allow for smaller windows/mobile devices/transforms the full, desktop 
-                    navigation bar to the hamburger navigaion bar)
-                -->
-                <nav class="navigation_bar_subpages_dimensions" data-visible="false" id="primary-navigation">
-                    
-                    <!--Has the <ul> tag that has all of the subpages of the website-->
-                    <div class="navigation_bar_subpages">
-                        <!--The beginning of the <ul> tag that contains all of the subpages of the website-->
-                        <ul class="primary-navigation">
-                            <li><a class="link" href="index.html">Home</a></li>
-                            <!--The "Events" <li> tag has submenus of its own, therefore having more line of html than the other <li> tags-->
-                            <!--"Events" has the id of 0-->
-                            <li>
-                                <!--The main div that has the name of the submenu ("Events") on the left and the arrowhead/chevron on the right-->
-                                <div class="submenu_with_dropdown">
-                                    <!--The <a> tag that opens the main "Events" submenu, not the submenu under "Events" itself-->
-                                    <a class="link" href="projects.html">Projects</a>
-                                    <!--Because the arrowhead/chevron has a position of absolute, we need the spacer so that the right flexbox has enough space for the chevron-->
-                                    <div class="spacer">
-                                        <button class="dropdown_arrowhead" id=0>
-                                            <img class="chevron" src="images/chevron.png">
-                                        </button>
-                                    </div>
-                                    <!--spacer ends-->
-                                </div>
-                                <!--submenu-with-dropdown ends-->
-                                
-                                <ul class="dropdown" id=0>
-                                    <li><a class="link" href="software.html">Software</a></li>
-                                    <li><a class="link" href="mechanical.html">Mechanical</a></li>
-                                    <li><a class="link" href="research.html">Research</a></li>
-                                </ul>
-                            </li>
-                            <!--Events ends-->
-
-                            <!--The "Resources" submenu is basically the same as the "Events" submenu-->
-                            <!--"Resources" has the id of 1-->
-                            <li>
-                                <div class="submenu_with_dropdown">
-                                    <a class="link" href="about-me.html">About Me</a>
-                                    <div class="spacer">
-                                        <button class="dropdown_arrowhead" id=1>
-                                            <img class="chevron" src="images/chevron.png">
-                                        </button>
-                                    </div>
-                                </div>
-                                <ul class="dropdown" id=1>
-                                    <li><a class="link" href="education.html">Education</a></li>
-                                    <li><a class="link" href="internships.html">Internships</a></li>
-                                </ul>
-                            </li>
-                            <!--Resources ends-->
-
-                            <li><a class="link" href="contact.html">Contact Me</a></li>
-                        </ul>
-                        <!--primary_navigation ends-->
-                    </div>
-                    <!--navigation_bar_subpages ends-->
-                </nav>
-                <!--navigation_bar_subpages_dimensions ends-->
-            </div>
-            <!--navigation_bar ends-->
-
-            <script src="js/navigation_bar/hamburger_menu.js"></script>
-            <script src="js/navigation_bar/dropdown.js"></script>
-        </header>
-        <!--header ends-->
-
         <!--The slideshow that you can see on the banner-->
         <div class="PlaceInCenter">
             <div class="slideshow_images">
-                <!-- Photo 1 -->
                 <div class="slideshow_img image_one"></div>
-            
-                <!-- Photo 2 -->
                 <div class="slideshow_img image_two"></div>
-        
-                <!-- Photo 3 -->
                 <div class="slideshow_img image_three"></div>
-            
-                <!-- Photo 4 -->
                 <div class="slideshow_img image_four"></div>
-
-                <!-- Photo 5 (vertical photo test) -->
                 <div class="slideshow_img image_five"></div>
             </div>            
             
@@ -149,84 +122,89 @@
             </div>
         </div>
   
-        <!-- Info Card 1 -->
-        <div class="detail_card_v1 outline">
-            <div class="center_v1 overflow-hidden">
-                <div class="overflow-visible">
-                    <img class="image img_v1 show-on-scroll" src="images/me cropped.jpg">
-                </div>
-            </div>
-
-            <div class="center_v1 overflow-hidden">
-                <div class="overflow-visible">
-                    <div class="text text_v2 show-on-scroll">
-                        <h1> About me</h1>
-                        <div class="text-break"></div>
-                        <p>
-                            I'm a driven person with the dedication and motivation to achieve great feats.
-                        </p>
+        <div class="mid-section">
+            <!-- Info Card 1 -->
+            <section class="small-section">
+                <div class="horizontal_card">
+                    <div class="center_v1 overflow-hidden">
+                        <div class="overflow-visible">
+                            <img class="image img_v1 show-on-scroll" src="images/me cropped.jpg">
+                        </div>
                     </div>
 
-                    <a href="about-me.html"><button class="button-index" type="button" ><span class="span-1"></span>More</button></a>  
+                    <div class="center_v1 overflow-hidden">
+                        <div class="overflow-visible">
+                            <div class="text text_v2 show-on-scroll">
+                                <h1> About me</h1>
+                                <div class="text-break"></div>
+                                <p>
+                                    I'm a driven person with the dedication and motivation to achieve great feats.
+                                </p>
+                            </div>
+                            <a href="about-me.html"><button class="button-index" type="button"><span class="span-1"></span>More</button></a>  
+                        </div>
+                    </div>
                 </div>
-            </div>
-        </div>
+            </section>
 
-        <!-- Break -->
-        <div class="break"></div>
+            <!-- Break -->
+            <div class="break"></div>
 
-        <!-- Info Card 2 -->
-        <div class="detail_card_v1">
-            <div class="center_v1 overflow-hidden">
-                <div class="overflow-visible">
-                    <img class="image img_v1 show-on-scroll" src="images/Education.jpeg">
-                </div>
-            </div>
-
-            <div class="center_v1 overflow-hidden">
-                <div class="overflow-visible">
-                    <div class="text text_v2 show-on-scroll overflow_visible">
-                        <h1> Education</h1>
-                        <div class="text-break"></div>
-                        <p>
-                            Currently attending Alpharetta High School. I'm also doing dual enrollment with Georgia Institute of Technology, Georgia State University, and Gwinnett Technical College.
-                        </p>
-                    </div>   
-                    <a href="education.html"><button class="button-index" type="button" ><span class="span-1"></span>More</button></a>               
-                </div>
-            </div>
-        </div>
-
-        <!-- Break -->
-        <div class="break"></div>
+            <!-- Info Card 2 -->
+            <section class="small-section">
+                <div class="horizontal_card">
+                    <div class="center_v1 overflow-hidden">
+                        <div class="overflow-visible">
+                            <img class="image img_v1 show-on-scroll" src="images/Education.jpeg">
+                        </div>
+                    </div>
         
-        <!--Info Card 4-->
-        <div class="encase">
-            <div class="title">
-                <h1 class="title-text">More about me</h1>
-            </div>
-            <div class="detail_card_v2">
-                <div class="detail_card_v6">
-                    <img class="image img_v2 show-on-scroll" src="images/trophy.jpeg">
-                    <h1 class="medium-text-padding center_v2">Accomplishments</h1>
-                    <p class="medium-text-font center_v2">Awards from clubs and personal achievements I have accomplished over the years</p>
-                    <a href="accomplishments.html" class="center_v2"><button class="button-index" type="button" ><span class="span-1"></span>See Accomplishments</button></a>               
+                    <div class="center_v1 overflow-hidden">
+                        <div class="overflow-visible">
+                            <div class="text text_v2 show-on-scroll">
+                                <h1> Education</h1>
+                                <div class="text-break"></div>
+                                <p>
+                                    Currently attending Alpharetta High School. I'm also doing dual enrollment with Georgia Institute of Technology, Georgia State University, and Gwinnett Technical College.
+                                </p>
+                            </div>   
+                            <a href="education.html"><button class="button-index" type="button"><span class="span-1"></span>More</button></a>               
+                        </div>
+                    </div>
                 </div>
+            </section>
 
-                <div class="detail_card_v6">
-                    <img class="image img_v2 show-on-scroll" src="images/Learning.jpeg">
-                    <h1 class="medium-text-padding center_v2">Education</h1>
-                    <p class="medium-text-font center_v2">The schools I've been to and what I've learned and accomplished from each one</p>
-                    <a href="education.html" class="center_v2"><button class="button-index" type="button" ><span class="span-1"></span>See Education</button></a>  
+            <!-- Break -->
+            <div class="break"></div>
+            
+            <!--Info Card 3-->
+            <section class="large-section">
+                <div class="title">
+                    <h1 class="title-text">More about me</h1>
                 </div>
-
-                <div class="detail_card_v6">
-                    <img class="image img_v2 show-on-scroll" src="images/celebration.jpeg">
-                    <h1 class="medium-text-padding center_v2">Projects</h1>
-                    <p class="medium-text-font center_v2">The several personal projects that I've worked (and currently working) on</p>
-                    <a href="projects.html" class="center_v2"><button class="button-index" type="button" ><span class="span-1"></span>See Projects</button></a>  
+                <div class="detail_card_v2">
+                    <div class="detail_card_v6">
+                        <img class="image img_v2 show-on-scroll" src="images/trophy.jpeg">
+                        <h1 class="medium-text-padding center_v2">Accomplishments</h1>
+                        <p class="medium-text-font center_v2">Awards from clubs and personal achievements I have accomplished over the years</p>
+                        <div class="center_v2"><a href="accomplishments.html"><button class="button-index" type="button"><span class="span-1"></span>See More</button></a></div>
+                    </div>
+                    
+                    <div class="detail_card_v6">
+                        <img class="image img_v2 show-on-scroll" src="images/Learning.jpeg">
+                        <h1 class="medium-text-padding center_v2">Education</h1>
+                        <p class="medium-text-font center_v2">The schools I've been to and what I've learned and accomplished from each one</p>
+                        <div class="center_v2"><a href="education.html"><button class="button-index" type="button"><span class="span-1"></span>See More</button></a>  </div>
+                    </div>
+        
+                    <div class="detail_card_v6">
+                        <img class="image img_v2 show-on-scroll" src="images/celebration.jpeg">
+                        <h1 class="medium-text-padding center_v2">Projects</h1>
+                        <p class="medium-text-font center_v2">The several personal projects that I've worked (and currently working) on</p>
+                        <div class="center_v2"><a href="projects.html"><button class="button-index" type="button"><span class="span-1"></span>See More</button></a></div>
+                    </div>
                 </div>
-            </div>
+            </section>            
         </div>
 
         <!-- JS script that adds 'is-visible' to any class with 'show-on-scroll' at the end -->

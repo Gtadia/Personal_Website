@@ -1,0 +1,22 @@
+.hover_zoom {
+    height: 100%;
+    width: 100%;
+    background-color: white;
+    border: none;
+}
+.hover_zoom:hover {
+    width: 120%;
+    aspect-ratio: 1;
+    transform: translate(-10%, 0); 
+}
+.v {
+    display: flex; 
+    justify-content: center;
+    align-items: center;
+    overflow: hidden;
+    margin: 0.1em 0.7em;
+    width: 4rem;
+    height: 4rem;
+
+    border-radius: 15%;
+}

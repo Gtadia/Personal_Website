@@ -5,25 +5,28 @@
     font-family: sans-serif; 
 }
 
-/* Gradient Background */
+@media (min-width: 1300px) {
+    .mid-section {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        flex-direction: column;
+    }
+    .small-section {
+        max-width: 1300px;
+    }
+    .large-section {
+        max-width: 1680px;
+    }
+}
+
 body {	
-	background: linear-gradient(to bottom, #010332, #100328, #29011C, #43000D, #530005 );
+	background: #131316;
 	background-size: 100%;
 	background-repeat: no-repeat;
     overflow-x: hidden;
     right: 0;
 }
-body:before{
-	content:'';
-	position: fixed;
-	top: 0;
-	bottom: 0;
-	width: 100%;
-	z-index: -1;
-	background: linear-gradient(to right bottom, rgba(255,255,255,0.2), #2032AC 75%);
-}
-/* Gradient Background */
-
 
 .banner-title {
     position: absolute; 
@@ -40,7 +43,6 @@ body:before{
     font-size: 10vh;
 }
 
-
 .banner-image {
     height: 100vh;
     position: relative;
@@ -52,8 +54,6 @@ body:before{
     
     background-position: center;
 }
-
-
 
 .header_text_v1 {
     padding: 50px 20px 0 20px;
@@ -102,12 +102,10 @@ body:before{
 }
 
 .scrollable-socials{
-    overflow-x: scroll;
-    height: minmax(20px, 40px);
+    display: flex;
     justify-content: right;
 }
 
-/* used for Mrs. Adegbaju's picture on "about-us" */
 .images {
     width: 100%;
     display: flex;
