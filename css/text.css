@@ -1,4 +1,13 @@
 /* Anything with a class of "text" will refer back to this css */
+.card-title {
+    position: relative;
+    top: calc(100% - 1em);
+    font-size: 4em;
+}
+
+.card-body {
+    font-size: 2.5em;
+}
 
 .text_v1 {
     box-sizing: border-box;

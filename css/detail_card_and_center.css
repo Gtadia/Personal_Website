@@ -9,6 +9,12 @@
     color: white;
 }
 
+.title-body-button {
+    display: grid;
+    width: 100%;
+    grid-auto-rows: 20% 60% 20%;
+}
+
 .detail_card_v2 {
     display: grid;
     grid-template-columns: repeat(3, 33.34%);

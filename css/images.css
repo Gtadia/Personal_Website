@@ -1,4 +1,17 @@
 /* Any class with "image" will be affected by this stylesheet */
+.img-plain {
+    max-width: 600px; 
+    opacity: 1;
+}
+
+.img-border {
+    border: 1em solid #fff;
+    background-color: white;
+    border-radius: .25em;
+    box-shadow: 1em 1em 2em .25em rgba(0,0,0,.2);
+    margin: 2em auto;
+}
+
 .img_v1 {
     border: 1em solid #fff;
     border-radius: .25em;
