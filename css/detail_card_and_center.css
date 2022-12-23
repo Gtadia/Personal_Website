@@ -1,4 +1,9 @@
 /* detail_card */
+.plain_card_vertical {  
+    display: flex;
+    flex-direction: column;
+}
+
 .horizontal_card {    
     display: grid;
     grid-template-columns: 50% 50%;
@@ -12,6 +17,7 @@
 .title-body-button {
     display: grid;
     width: 100%;
+    height: auto;
     grid-auto-rows: 20% 60% 20%;
 }
 
@@ -83,6 +89,12 @@
 }
 .small-padding{
     padding: 0 1em;
+}
+.large-margin {
+    margin: 0 5em;
+}
+.small-margin{
+    margin: 0 1em;
 }
 
 /* Center */

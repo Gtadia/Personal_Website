@@ -17,8 +17,8 @@
   border-radius: 15%;
 }
 
-
 button {
+  cursor: pointer;
   overflow: hidden;
   background: none;
   border: 0;

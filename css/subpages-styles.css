@@ -163,7 +163,7 @@ body {
 .break-short {
     position: relative; 
     width: 100%;
-    height: 5vh;
+    height: 5em;
     background: transparent;  
 }
 
@@ -172,7 +172,7 @@ body {
     width: 200px; 
     padding: 15px 0;
     text-align: center;
-    margin: 20px;
+    /* margin: 20px; */
     border-radius: 25px;
     font-weight: bold;
     border: 2px solid #009688;
@@ -236,4 +236,26 @@ button:hover span{
             background: black;
         }
     }
+}
+
+
+/* Padding and Margin */
+.medium-padding-no-top {
+    padding: 0 3vw 1vh 3vw;
+}
+
+.medium-padding {
+    padding: 3vw;
+}
+
+.y-axis-padding{
+    padding: 3vh 0;
+}
+
+.medium-margin {
+    margin: 1.5em;
+}
+
+.x-axis-medium-margin {
+    margin: 1.5em 0;
 }
