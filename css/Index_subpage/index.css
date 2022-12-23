@@ -320,8 +320,15 @@ button:hover span{
 .break {
     position: relative; 
     width: 100%;
-    height: 5vh;
+    height: 20vh;
     background: transparent; 
+}
+
+.break-short {
+    position: relative; 
+    width: 100%;
+    height: 5vh;
+    background: transparent;  
 }
 
 

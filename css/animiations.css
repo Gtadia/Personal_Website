@@ -10,11 +10,3 @@
     filter: blur(0);
     transform: translateX(0);
 }
-
-.sliding-card:nth-child(2) {
-    transition-delay: 200ms;
-}
-
-.sliding-card:nth-child(3) {
-    transition-delay: 400ms;
-}

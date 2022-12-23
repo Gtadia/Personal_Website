@@ -106,15 +106,6 @@ body {
     justify-content: right;
 }
 
-.images {
-    width: 100%;
-    display: flex;
-    align-items: center;
-    justify-content: center;
-}
-
-
-
 .backgroundImg {
     position: absolute; 
     top: 50%;

@@ -3,20 +3,135 @@
     width: 100%;
     background-color: white;
     border: none;
+    transition: transform 0.1s;
 }
 .hover_zoom:hover {
-    width: 120%;
     aspect-ratio: 1;
-    transform: translate(-10%, 0); 
+    transform: scale(110%); 
 }
-.v {
-    display: flex; 
-    justify-content: center;
-    align-items: center;
-    overflow: hidden;
-    margin: 0.1em 0.7em;
-    width: 4rem;
-    height: 4rem;
 
-    border-radius: 15%;
+.drawB {
+  height: 100%;
+  width: 100%;
+  background-color: white;
+  border-radius: 15%;
 }
+
+
+button {
+  overflow: hidden;
+  background: none;
+  border: 0;
+  box-sizing: border-box;
+  margin: 1em;
+  font-size: inherit;
+  font-weight: 700;
+  position: relative;
+  vertical-align: middle;
+  width: 4em;
+  height: 4em;
+}
+button::before, button::after {
+  border-radius: 15%;
+  box-sizing: inherit;
+  content: '';
+  position: absolute;
+  width: 100%;
+  height: 100%;
+}
+.draw {
+  transition: color 0.25s;
+}
+.draw::before, .draw::after {
+  border-radius: 15%;
+  border: 5px solid transparent;
+  width: 0;
+  height: 0;
+}
+.draw::before {
+  top: 0;
+  left: 0;
+}
+.draw::after {
+  bottom: 0;
+  right: 0;
+}
+.draw:hover {
+  color: #0eb7da;
+}
+.draw:hover::before, .draw:hover::after {
+  width: 100%;
+  height: 100%;
+}
+.draw:hover::before {
+  border-top-color: #f23243;
+  border-right-color: #f23243;
+  transition: width 0.25s ease-out, height 0.25s ease-out 0.25s;
+}
+.draw:hover::after {
+  border-bottom-color: #f23243;
+  border-left-color: #f23243;
+  transition: border-color 0s ease-out 0.5s, width 0.25s ease-out 0.5s, height 0.25s ease-out 0.75s;
+}
+
+/*
+.hover_zoom_div {
+  background: none;
+  border: 0; 
+  box-sizing: border-box;
+  margin: 1em;
+  padding: ;
+
+  overflow: hidden;
+  width: 6rem;
+  height: 6rem;
+
+  border-radius: 15%;
+  position: relative;
+
+    vertical-align: middle;
+}
+
+
+.hover_zoom_div::before, button::after {
+    box-sizing: inherit;
+    content: '';
+    position: absolute;
+    width: 100%;
+    height: 100%;
+  }
+  .draw {
+    transition: color 0.25s;
+  }
+  .draw::before, .draw::after {
+    border-radius: 15%;
+    border: 2px solid transparent;
+    width: 0;
+    height: 0;
+  }
+  .draw::before {
+    top: 0;
+    left: 0;
+  }
+  .draw::after {
+    bottom: 0;
+    right: 0;
+  }
+  .draw:hover {
+    color: #0eb7da;
+  }
+  .draw:hover::before, .draw:hover::after {
+    width: 100%;
+    height: 100%;
+  }
+  .draw:hover::before {
+    border-top-color: #0eb7da;
+    border-right-color: #0eb7da;
+    transition: width 0.25s ease-out, height 0.25s ease-out 0.25s;
+  }
+  .draw:hover::after {
+    border-bottom-color: #0eb7da;
+    border-left-color: #0eb7da;
+    transition: ease-out 0.5s, width 0.25s ease-out 0.5s, height 0.25s ease-out 0.75s;
+  }
+  */

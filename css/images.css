@@ -1,7 +1,23 @@
 /* Any class with "image" will be affected by this stylesheet */
+.image {
+    width: 100%; 
+    height: 100%;
+}
+
+.image-90 {
+    width: 90%;
+    height: 90%;
+}
+
 .img-plain {
     max-width: 600px; 
     opacity: 1;
+}
+
+.img-round {
+    max-width: 600px; 
+    opacity: 1;
+    border-radius: 50%;
 }
 
 .img-border {
