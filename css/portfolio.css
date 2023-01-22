@@ -1,5 +1,6 @@
 .portfolio-card-group {
     display: grid;
+    justify-content: center;
     /* grid-template-columns: 50% 50%; */
     grid-template-columns: 800px 800px;
     grid-auto-rows: 800px;
@@ -9,6 +10,13 @@
 .portfolio-card {
     margin: 0px 0px 0px 0px;
     /* width: 600px; */
+}
+
+.portfolio-title-body-button-2 {
+    display: grid;
+    width: 100%;
+    height: 70%;
+    grid-auto-rows: 20% 60% 20%; 
 }
 
 .portfolio-title-body-button {
@@ -85,7 +93,43 @@ align-items: center;
     .project {
         display: grid;
         grid-template-columns: 430px;
-        grid-auto-rows: 430px 430px;
+        grid-auto-rows: auto auto;
         justify-content: center;
     }
+
+    .portfolio-card-group {
+        display: grid;
+        grid-template-columns: 360px;
+        grid-auto-rows: 600px 600px;
+        color: white;
+    }
+
+    .portfolio-title-body-button-2 {
+        display: flex;
+        flex-direction: column;
+        row-gap: 2em;
+
+        height: auto;
+
+        /* width: 100%;
+        grid-auto-rows: 20% 60% 20%;  */
+    }
+
+    .portfolio-title-body-button {
+        display: flex;
+        flex-direction: column;
+        row-gap: 1.5em;
+        /* width: 100%; */
+        height: fit-content;
+        /* grid-auto-rows: 20% 60% 20%;  */
+    }
+
+    .project-image-container {
+        width: 90%;
+        height: auto;
+        
+        display: flex;
+        justify-self: center;
+        align-items: center;
+        }
 }

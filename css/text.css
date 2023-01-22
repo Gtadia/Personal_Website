@@ -4,6 +4,7 @@
     top: calc(100% - 1em);
     font-size: 4em;
     padding: 0px;
+    overflow-wrap: normal;
 }
 
 .card-body {
