@@ -101,8 +101,6 @@
     align-items: center;
 }
 
-
-
 .link {
     position: relative;
     width: fit-content;
@@ -140,21 +138,21 @@
         background-color: hsl(0 0% 50%/ 0.75);
     }
 
-
-
     .spacer {
         position: relative;
+        display: flex;
+        overflow: show;
         width: 30px;
         height: 10px;
+        justify-content: center;
+        align-items: center;
     }
-
-
 
     .chevron {
         width: 26px;
 
         position: absolute;
-        top: -50%;
+        top: -20%;
         left: 30%;
         transform: rotate(180deg);
         transition: transform 0.5s ease-in-out;
@@ -255,7 +253,7 @@
     .chevron {
         width: 45px;
         transform: rotate(0deg);
-        margin: 7px;
+        margin: 0px 7px;
     
         transition: transform 0.5s ease-in-out;
     }

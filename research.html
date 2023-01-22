@@ -9,222 +9,114 @@
         <title>Research</title>
         <link rel="icon" type="image/x-icon" href="images/My_Logo.png"> 
 
-        <link rel="stylesheet" href="css/projects.css">
+        <link rel="stylesheet" href="css/portfolio.css">
         <link rel="stylesheet" href="css/subpages-styles.css">
         <link rel="stylesheet" href="css/nav.css">
-        <link rel="stylesheet" href="css/show-on-scroll.css">
+                <link rel="stylesheet" href="css/animations.css">
+        <link rel="stylesheet" href="css/buttons.css">
         <link rel="stylesheet" href="css/text.css">
         <link rel="stylesheet" href="css/images.css">
         <link rel="stylesheet" href="css/detail_card_and_center.css">
 
     </head>
 
+    <!--navigation bar starts-->
+    <header>
+        <div class="header-blur"></div>
+        <div class="navigation_bar">
+            <div class="header-logo">
+                <a href ="index.html"><img src="images/My_Logo.png" class="logo"></a>
+            </div>  
+            <link rel="icon" type="image/x-icon" href="images/My_Logo.png"> 
+            <buttton class="hamburger-menu button-nav" aria-controls="primary-navigation" aria-expanded="false"></buttton>
+            <nav class="navigation_bar_subpages_dimensions" data-visible="false" id="primary-navigation">
+                <div class="navigation_bar_subpages">
+                    <ul class="primary-navigation">
+                        <li><a class="link" href="index.html">Home</a></li>
+                        <li>
+                            <div class="submenu_with_dropdown">
+                                <a class="link" href="portfolio.html">Portfolio</a>
+                                <div class="spacer">
+                                    <button class="dropdown_arrowhead" id=0>
+                                        <img class="chevron" src="images/chevron.png">
+                                    </button>
+                                </div>
+                            </div>
+                            <ul class="dropdown" id=0>
+                                <li><a class="link" href="software.html">Software</a></li>
+                                <li><a class="link" href="mechanical.html">Mechanical</a></li>
+                                <li><a class="link" href="research.html">Research</a></li>
+                                <li><a class="link" href="internships.html">Internships & Programs</a></li>
+                            </ul>
+                        </li>
+                        <li>
+                            <div class="submenu_with_dropdown">
+                                <a class="link" href="about-me.html">About Me</a>
+                                <div class="spacer">
+                                    <button class="dropdown_arrowhead" id=1>
+                                        <img class="chevron" src="images/chevron.png">
+                                    </button>
+                                </div>
+                            </div>
+                            <ul class="dropdown" id=1>
+                                <li><a class="link" href="education.html">Education</a></li>
+                                <li><a class="link" href="achievements.html">Achievements</a></li>
+                            </ul>
+                        </li>
+                        <li><a class="link" href="contact.html">Contact Me</a></li>
+                    </ul>
+                </div>
+            </nav>
+        </div>
+        <script src="js/navigation_bar/hamburger_menu.js"></script>
+        <script src="js/navigation_bar/dropdown.js"></script>
+    </header>
+    <!--navigation_bar ends-->
+
     <body>
-        <!--navigation bar starts-->
-        <header>
-            <!--The long hoorizontal black bar across the top and the background (and only the black bar)-->
-            <div class="header-blur"></div>
-            <!--header-blur ends-->
-
-            <!--All the elements that make up the navigation bar (except for the black horizontal bar behind these elements)-->
-            <div class="navigation_bar">
-                <!--The logo on the top left corner of the website-->
-                <div class="header-logo">
-                    <a href ="index.html"><img src="images/My_Logo.png" class="logo"></a>
-                </div>  
-                <!--header-logo ends-->
-                <link rel="icon" type="image/x-icon" href="images/My_Logo.png"> 
-                <!--When the browser window gets to a certain size, the hamburger menu bar icon appears and all of the subpages on the navigation bar appears only when this button is pressed-->
-                <buttton class="hamburger-menu button-nav" aria-controls="primary-navigation" aria-expanded="false"></buttton>
-                <!--hamburger-menu ends-->
-
-                <!--
-                    navbar_subpage is the div that contains the where all of the subpages of the website are contained with("data-visible="false" 
-                    and id="primary-navigation" (related with 'class="primary-navigation"') is used to allow for smaller windows/mobile devices/transforms the full, desktop 
-                    navigation bar to the hamburger navigaion bar)
-                -->
-                <nav class="navigation_bar_subpages_dimensions" data-visible="false" id="primary-navigation">
-                    
-                    <!--Has the <ul> tag that has all of the subpages of the website-->
-                    <div class="navigation_bar_subpages">
-                        <!--The beginning of the <ul> tag that contains all of the subpages of the website-->
-                        <ul class="primary-navigation">
-                            <li><a class="link" href="index.html">Home</a></li>
-                            <!--The "Events" <li> tag has submenus of its own, therefore having more line of html than the other <li> tags-->
-                            <!--"Events" has the id of 0-->
-                            <li>
-                                <!--The main div that has the name of the submenu ("Events") on the left and the arrowhead/chevron on the right-->
-                                <div class="submenu_with_dropdown">
-                                    <!--The <a> tag that opens the main "Events" submenu, not the submenu under "Events" itself-->
-                                    <a class="link" href="projects.html">Projects</a>
-                                    <!--Because the arrowhead/chevron has a position of absolute, we need the spacer so that the right flexbox has enough space for the chevron-->
-                                    <div class="spacer">
-                                        <button class="dropdown_arrowhead" id=0>
-                                            <img class="chevron" src="images/chevron.png">
-                                        </button>
-                                    </div>
-                                    <!--spacer ends-->
-                                </div>
-                                <!--submenu-with-dropdown ends-->
-                                
-                                <ul class="dropdown" id=0>
-                                    <li><a class="link" href="software.html">Software</a></li>
-                                    <li><a class="link" href="mechanical.html">Mechanical</a></li>
-                                    <li><a class="link" href="research.html">Research</a></li>
-                                </ul>
-                            </li>
-                            <!--Events ends-->
-
-                            <!--The "Resources" submenu is basically the same as the "Events" submenu-->
-                            <!--"Resources" has the id of 1-->
-                            <li>
-                                <div class="submenu_with_dropdown">
-                                    <a class="link" href="about-me.html">About Me</a>
-                                    <div class="spacer">
-                                        <button class="dropdown_arrowhead" id=1>
-                                            <img class="chevron" src="images/chevron.png">
-                                        </button>
-                                    </div>
-                                </div>
-                                <ul class="dropdown" id=1>
-                                    <li><a class="link" href="education.html">Education</a></li>
-                                    <li><a class="link" href="internships.html">Internships</a></li>
-                                </ul>
-                            </li>
-                            <!--Resources ends-->
-
-                            <li><a class="link" href="contact.html">Contact Me</a></li>
-                        </ul>
-                        <!--primary_navigation ends-->
-                    </div>
-                    <!--navigation_bar_subpages ends-->
-                </nav>
-                <!--navigation_bar_subpages_dimensions ends-->
-            </div>
-            <!--navigation_bar ends-->
-
-            <script src="js/navigation_bar/hamburger_menu.js"></script>
-            <script src="js/navigation_bar/dropdown.js"></script>
-        </header>
-        <!--header ends-->
-
         <!--banner starts-->
         <div class="banner">
             <div class="banner-title">
-                <h1>Projects (Research)</h1>
+                <h1>Research</h1>
             </div>
             <div class="banner-image"></div>
         </div>
         <!--banner ends-->
 
         <!--Break between the two event categories-->
-        <div class="card-break"></div>
+        <div class="break-short"></div>
         <!--Break ends-->
 
-        <div>
-            <div class="event-category-container overflow-hidden">
-                <!--id=0-->
-                <div class="overflow-visible">
-                    <div class="individual-event-detail-card show-on-scroll">
-                        <div class="event-details">
-                            <div style = 'background-image: url("images/bamboo_straws.jpeg");'class="image-events"></div>
-    
-    
-                            <div class="event-info">
-                                <h1>
-                                    Why Paper Straws Suck: Bamboo Straw Supremacy
-                                    <div class="text-break"></div>
-                                </h1>
-                                <p>
-                                    Plastic straws, while durable and easy to manufacture, is 
-                                    negatively impacting the environment when it is deposed of 
-                                    imporperly. This research paper aims to find whether plastic 
-                                    straw alternatives, namely bamboo, are viable along with their 
-                                    benefits and downsides. 
-                                </p>
-    
-                                <div class="chevron-btn-container">
-                                    <div class="see-more-see-less-text-events">See More</div>
-    
-                                    <button class="button-events" id=0>
-                                        <img class="chevron-events" src="images/chevron.png">
-                                    </button>
-                                </div>
-                            </div>
-        
-                            <div class="event-description">
-                                <div class="event-description-background-image" style="background-image: url('images/SpaceWallpaper.jpeg');">
-    
-                                <div class="event-description-text-container">
-                                    <p class="event-description-text">
-                                        The research was conducted as a part of the MITES Semester (Minority 
-                                        Introduction to Engineering and Science), formerly MOSTEC (MIT Online 
-                                        Science Technology and Engineering Community), for the material science 
-                                        project course. Paper straws and bamboo straws were tested for their 
-                                        impact resistance, water absorbity, and many other properties that might 
-                                        impact the use of the product. If you want to learn more about the project, 
-                                        the PDF of the research paper is linked down below.
-                                    </p>
-                                </div>
-                                <div class="events_description_btn_container">
-                                    <a href="PDF/Why Paper Straw Suck-Bamboo Straw Supremacy.pdf"><button class="events_description_btn" type="button"><span class="span-1"></span>More Info</button></a>
-                                </div>
-                            </div>
-                        </div>
-                    </div>
+        <div class="project-center">
+            <div class="project slide-up-show">
+                <div class="project-image-container">
+                    <img class="image-fit-container" src="images/bamboo_straws.jpeg">
                 </div>
+                <div class="portfolio-title-body-button medium-padding">
+                    <h1 class="project-title center_v1">Why Paper Straws Suck</h1>
+                    <p class="medium-text-font center_v1">This research paper aims to find whether plastic 
+                        straw alternatives, namely bamboo, are viable along with their 
+                        benefits and downsides.</p>
+                    <a class="center_v1" href="research.html"><button class="button-1 x-axis-medium-margin" type="button" ><span class="span-1"></span>See Research Projects</button></a>
+                </div>
+            </div>
 
-                <!-- id=1-->
-                <div class="overflow-visible">
-                    <div class="individual-event-detail-card show-on-scroll">
-                        <div class="event-details">
-                            <div style = 'background-image: url("images/Rice.jpeg");'class="image-events"></div>
-    
-                            <div class="event-info">
-                                <h1>
-                                    The Impact of Emotion Expressed in Words and Tone-of-Voice on Grains of Rice
-                                    <div class="text-break"></div>
-                                </h1>
-                                <p>
-                                    Tested the impact of words spoken in different emotions expressed in the tone-of-voice on grains of rice. My sister, who worked on the project with me, and I hypothesized that the only the emotions impacts the grains of rice. 
-                                </p>
-    
-                                <div class="chevron-btn-container">
-                                    <div class="see-more-see-less-text-events">See More</div>
-    
-                                    <button class="button-events" id=1>
-                                        <img class="chevron-events" src="images/chevron.png">
-                                    </button>
-                                </div>
-                            </div>
-        
-                            <div class="event-description">
-                                <div class="event-description-background-image" style="background-image: url('images/SpaceWallpaper.jpeg');">
-    
-                                <div class="event-description-text-container">
-                                    <p class="event-description-text">
-                                        Inspired by other research done on the impact of emotions expressed in words 
-                                        and the tone-of-voice on other non-human subjects, such as water and other 
-                                        plant products, my sister and I worked on this project together to test if 
-                                        the results are reproduceable in grains of rice as well.
-                                    </p>
-                                </div>
-                                <div class="events_description_btn_container">
-                                    <button class="events_description_btn" type="button"><span class="span-1"></span>Rules</button>
-                                    <button class="events_description_btn" type="button"><span class="span-1"></span>More Info</button>
-                                </div>
-                            </div>
-                        </div>
-                    </div>
+            <div class="project-break"></div>
+            <div class="project slide-up-show">
+                <div class="project-image-container">
+                    <img class="image-fit-container" src="images/Rice.jpeg">
                 </div>
-                <!--Clock App ends-->
+                <div class="portfolio-title-body-button medium-padding">
+                    <h1 class="project-title center_v1">Effect of Emotions on Rice</h1>
+                    <p class="medium-text-font center_v1">This research tested the impact of words spoken in different 
+                        emotions expressed in the tone-of-voice on grains of rice.</p>
+                    <a class = "center_v1" href="research.html"><button class="button-1 x-axis-medium-margin" type="button" ><span class="span-1"></span>See Research Projects</button></a>
+                </div>
             </div>
         </div>
 
+        <div class="project-break"></div>
 
-        <div class="bottom-break"></div>
-
-        <script src="js/stagger-show.js"></script>
-        <script src="js/Events_subpage/see-more-detail.js"></script>
+        <script src="js/slide-up-show.js"></script>
     </body>
 </html>

@@ -4,215 +4,116 @@
         <meta http-equiv="pragma" content="no-cache"/>
         <meta charset="UTF-8">
 
-        <!---->
         <meta name="viewport" content="width=device-width, initial-scale=0.86, maximum-scale=5.0, minimum-scale=0.86">
         
         <title>Mechanical</title>
         <link rel="icon" type="image/x-icon" href="images/My_Logo.png"> 
 
-        <link rel="stylesheet" href="css/projects.css">
+        <link rel="stylesheet" href="css/portfolio.css">
         <link rel="stylesheet" href="css/subpages-styles.css">
         <link rel="stylesheet" href="css/nav.css">
-        <link rel="stylesheet" href="css/show-on-scroll.css">
+        <link rel="stylesheet" href="css/animations.css">
+        <link rel="stylesheet" href="css/buttons.css">
         <link rel="stylesheet" href="css/text.css">
         <link rel="stylesheet" href="css/images.css">
         <link rel="stylesheet" href="css/detail_card_and_center.css">
 
     </head>
 
+    <!--navigation bar starts-->
+    <header>
+        <div class="header-blur"></div>
+        <div class="navigation_bar">
+            <div class="header-logo">
+                <a href="index.html"><img src="images/My_Logo.png" class="logo"></a>
+            </div>  
+            <link rel="icon" type="image/x-icon" href="images/My_Logo.png"> 
+            <buttton class="hamburger-menu button-nav" aria-controls="primary-navigation" aria-expanded="false"></buttton>
+            <nav class="navigation_bar_subpages_dimensions" data-visible="false" id="primary-navigation">
+                <div class="navigation_bar_subpages">
+                    <ul class="primary-navigation">
+                        <li><a class="link" href="index.html">Home</a></li>
+                        <li>
+                            <div class="submenu_with_dropdown">
+                                <a class="link" href="portfolio.html">Portfolio</a>
+                                <div class="spacer">
+                                    <button class="dropdown_arrowhead" id=0>
+                                        <img class="chevron" src="images/chevron.png">
+                                    </button>
+                                </div>
+                            </div>
+                            <ul class="dropdown" id=0>
+                                <li><a class="link" href="software.html">Software</a></li>
+                                <li><a class="link" href="mechanical.html">Mechanical</a></li>
+                                <li><a class="link" href="research.html">Research</a></li>
+                                <li><a class="link" href="internships.html">Internships & Programs</a></li>
+                            </ul>
+                        </li>
+                        <li>
+                            <div class="submenu_with_dropdown">
+                                <a class="link" href="about-me.html">About Me</a>
+                                <div class="spacer">
+                                    <button class="dropdown_arrowhead" id=1>
+                                        <img class="chevron" src="images/chevron.png">
+                                    </button>
+                                </div>
+                            </div>
+                            <ul class="dropdown" id=1>
+                                <li><a class="link" href="education.html">Education</a></li>
+                                <li><a class="link" href="achievements.html">Achievements</a></li>
+                            </ul>
+                        </li>
+                        <li><a class="link" href="contact.html">Contact Me</a></li>
+                    </ul>
+                </div>
+            </nav>
+        </div>
+        <script src="js/navigation_bar/hamburger_menu.js"></script>
+        <script src="js/navigation_bar/dropdown.js"></script>
+    </header>
+    <!--navigation_bar ends-->
+
     <body>
-        <!--navigation bar starts-->
-        <header>
-            <!--The long hoorizontal black bar across the top and the background (and only the black bar)-->
-            <div class="header-blur"></div>
-            <!--header-blur ends-->
-
-            <!--All the elements that make up the navigation bar (except for the black horizontal bar behind these elements)-->
-            <div class="navigation_bar">
-                <!--The logo on the top left corner of the website-->
-                <div class="header-logo">
-                    <a href ="index.html"><img src="images/My_Logo.png" class="logo"></a>
-                </div>  
-                <!--header-logo ends-->
-                <link rel="icon" type="image/x-icon" href="images/My_Logo.png"> 
-                <!--When the browser window gets to a certain size, the hamburger menu bar icon appears and all of the subpages on the navigation bar appears only when this button is pressed-->
-                <buttton class="hamburger-menu button-nav" aria-controls="primary-navigation" aria-expanded="false"></buttton>
-                <!--hamburger-menu ends-->
-
-                <!--
-                    navbar_subpage is the div that contains the where all of the subpages of the website are contained with("data-visible="false" 
-                    and id="primary-navigation" (related with 'class="primary-navigation"') is used to allow for smaller windows/mobile devices/transforms the full, desktop 
-                    navigation bar to the hamburger navigaion bar)
-                -->
-                <nav class="navigation_bar_subpages_dimensions" data-visible="false" id="primary-navigation">
-                    
-                    <!--Has the <ul> tag that has all of the subpages of the website-->
-                    <div class="navigation_bar_subpages">
-                        <!--The beginning of the <ul> tag that contains all of the subpages of the website-->
-                        <ul class="primary-navigation">
-                            <li><a class="link" href="index.html">Home</a></li>
-                            <!--The "Events" <li> tag has submenus of its own, therefore having more line of html than the other <li> tags-->
-                            <!--"Events" has the id of 0-->
-                            <li>
-                                <!--The main div that has the name of the submenu ("Events") on the left and the arrowhead/chevron on the right-->
-                                <div class="submenu_with_dropdown">
-                                    <!--The <a> tag that opens the main "Events" submenu, not the submenu under "Events" itself-->
-                                    <a class="link" href="projects.html">Projects</a>
-                                    <!--Because the arrowhead/chevron has a position of absolute, we need the spacer so that the right flexbox has enough space for the chevron-->
-                                    <div class="spacer">
-                                        <button class="dropdown_arrowhead" id=0>
-                                            <img class="chevron" src="images/chevron.png">
-                                        </button>
-                                    </div>
-                                    <!--spacer ends-->
-                                </div>
-                                <!--submenu-with-dropdown ends-->
-                                
-                                <ul class="dropdown" id=0>
-                                    <li><a class="link" href="software.html">Software</a></li>
-                                    <li><a class="link" href="mechanical.html">Mechanical</a></li>
-                                    <li><a class="link" href="research.html">Research</a></li>
-                                </ul>
-                            </li>
-                            <!--Events ends-->
-
-                            <!--The "Resources" submenu is basically the same as the "Events" submenu-->
-                            <!--"Resources" has the id of 1-->
-                            <li>
-                                <div class="submenu_with_dropdown">
-                                    <a class="link" href="about-me.html">About Me</a>
-                                    <div class="spacer">
-                                        <button class="dropdown_arrowhead" id=1>
-                                            <img class="chevron" src="images/chevron.png">
-                                        </button>
-                                    </div>
-                                </div>
-                                <ul class="dropdown" id=1>
-                                    <li><a class="link" href="education.html">Education</a></li>
-                                    <li><a class="link" href="internships.html">Internships</a></li>
-                                </ul>
-                            </li>
-                            <!--Resources ends-->
-
-                            <li><a class="link" href="contact.html">Contact Me</a></li>
-                        </ul>
-                        <!--primary_navigation ends-->
-                    </div>
-                    <!--navigation_bar_subpages ends-->
-                </nav>
-                <!--navigation_bar_subpages_dimensions ends-->
-            </div>
-            <!--navigation_bar ends-->
-
-            <script src="js/navigation_bar/hamburger_menu.js"></script>
-            <script src="js/navigation_bar/dropdown.js"></script>
-        </header>
-        <!--header ends-->
-
         <!--banner starts-->
         <div class="banner">
             <div class="banner-title">
-                <h1>Projects (Mechanical)</h1>
+                <h1>Mechanical</h1>
             </div>
             <div class="banner-image"></div>
         </div>
         <!--banner ends-->
 
         <!--Break between the two event categories-->
-        <div class="card-break"></div>
+        <div class="break-short"></div>
         <!--Break ends-->
 
-        <div>
-            <div class="event-category-container overflow-hidden">
-                <!--id=0-->
-                <div class="overflow-visible">
-                    <div class="individual-event-detail-card show-on-scroll">
-                        <div class="event-details">
-                            <div style = 'background-image: url("images/Pendulum_Clock.jpeg");'class="image-events"></div>
-    
-    
-                            <div class="event-info">
-                                <h1>
-                                    3D Printed Mechanical Pendulum Clock Escapement 
-                                    <div class="text-break"></div>
-                                </h1>
-                                <p>
-                                    A fully 3D printed mechaical clock that is powered by weights and the time tracked using a pendulum and clocke escapement.
-                                </p>
-    
-                                <div class="chevron-btn-container">
-                                    <div class="see-more-see-less-text-events">See More</div>
-    
-                                    <button class="button-events" id=0>
-                                        <img class="chevron-events" src="images/chevron.png">
-                                    </button>
-                                </div>
-                            </div>
-        
-                            <div class="event-description">
-                                <div class="event-description-background-image" style="background-image: url('images/SpaceWallpaper.jpeg');">
-    
-                                <div class="event-description-text-container">
-                                    <p class="event-description-text">
-                                        Using the Fusion 360 CAD program and my 3D printer (Sovol SV01), I designed and pritned a fully working mechanical clock. The STL files to the clock can be found on my Thangs account.
-                                    </p>
-                                </div>
-                                <div class="events_description_btn_container">
-                                    <button class="events_description_btn" type="button"><span class="span-1"></span>Pictures</button>
-                                    <button class="events_description_btn" type="button"><span class="span-1"></span>Thangs</button>
-                                </div>
-                            </div>
-                        </div>
-                    </div>
+        <div class="project-center">
+            <div class="project slide-up-show">
+                <div class="project-image-container">
+                    <img class="image-fit-container" src="images/Pendulum_Clock.jpeg">
                 </div>
+                <div class="portfolio-title-body-button medium-padding">
+                    <h1 class="project-title center_v1">Pendulum Clock Escapement</h1>
+                    <p class="medium-text-font center_v1">A fully 3D printed mechaical clock that is powered by weights and the time tracked using a pendulum and clocke escapement.</p>
+                    <a class="center_v1 button-1" href="research.html"><button class="button x-axis-medium-margin" type="button" ><span class="span-1"></span>See Research Projects</button></a>
+                </div>
+            </div>
 
-                <!-- id=1-->
-                <div class="overflow-visible">
-                    <div class="individual-event-detail-card show-on-scroll">
-                        <div class="event-details">
-                            <div style = 'background-image: url("images/Gravity_Vehicle.jpeg");' class="image-events"></div>
-    
-                            <div class="event-info">
-                                <h1>
-                                    Gravity Vehicle
-                                    <div class="text-break"></div>
-                                </h1>
-                                <p>
-                                    A vehcile propelled by gravity and have a breaking system that stops the vehicle after a pre-programmed distance.
-                                </p>
-    
-                                <div class="chevron-btn-container">
-                                    <div class="see-more-see-less-text-events">See More</div>
-    
-                                    <button class="button-events" id=1>
-                                        <img class="chevron-events" src="images/chevron.png">
-                                    </button>
-                                </div>
-                            </div>
-        
-                            <div class="event-description">
-                                <div class="event-description-background-image" style="background-image: url('images/SpaceWallpaper.jpeg');">
-    
-                                <div class="event-description-text-container">
-                                    <p class="event-description-text">
-                                        I originally created this vehicle for the 2021 Science Olympiad competition. I designed it using Fusion 360 and built using wood, threaded metal rod and nut, and 3D printed parts for the more specialized parts.  
-                                    </p>
-                                </div>
-                                <div class="events_description_btn_container">
-                                    <button class="events_description_btn" type="button"><span class="span-1"></span>Pictures</button>
-                                    <button class="events_description_btn" type="button"><span class="span-1"></span>Thangs</button>
-                                </div>
-                            </div>
-                        </div>
-                    </div>
+            <div class="project-break"></div>
+            <div class="project slide-up-show">
+                <div class="project-image-container">
+                    <img class="image-fit-container" src="images/Gravity_Vehicle.jpeg">
+                </div>
+                <div class="portfolio-title-body-button medium-padding">
+                    <h1 class="project-title center_v1">Gravity Vehicle</h1>
+                    <p class="medium-text-font center_v1">A vehcile propelled by gravity and have a breaking system that stops the vehicle after a pre-programmed distance.</p>
+                    <a class = "center_v1 button-1" href="research.html"><button class="button x-axis-medium-margin" type="button" ><span class="span-1"></span>See Research Projects</button></a>
                 </div>
             </div>
         </div>
 
+        <div class="project-break"></div>
 
-        <div class="bottom-break"></div>
-
-        <script src="js/stagger-show.js"></script>
-        <script src="js/Events_subpage/see-more-detail.js"></script>
+        <script src="js/slide-up-show.js"></script>
     </body>
 </html>

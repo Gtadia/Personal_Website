@@ -3,10 +3,17 @@
     position: relative;
     top: calc(100% - 1em);
     font-size: 4em;
+    padding: 0px;
 }
 
 .card-body {
     font-size: 2.5em;
+    padding: 0px;
+}
+
+.project-title {
+    font-size: 2.5em;
+    text-transform: uppercase;
 }
 
 .text_v1 {
@@ -30,7 +37,7 @@
 }
 
 .medium-text-font {
-    font-size: 3vh;
+    font-size: 2.2em;
 }
 
 .large-text-font{
@@ -47,4 +54,42 @@
 
 .text_word_wrap {
     word-wrap: break-word;
+}
+
+.text-align-left {
+    text-align: left;
+}
+
+@media (max-width: 1150px) {
+    .medium-text-font {
+        font-size: 1.7em;
+    }
+
+    .card-title {
+        position: relative;
+        top: calc(100% - 1em);
+        font-size: 3.6em;
+    }
+
+    .card-body {
+        font-size: 2em;
+    }
+}
+
+@media (max-width: 600px) {
+    /* .medium-text-font {
+        font-size: 1.7em;
+    } */
+
+    .card-title {
+        position: relative;
+        top: calc(100% - 1em);
+        font-size: 3em;
+        padding: 0px 10px;
+    }
+
+    .card-body {
+        font-size: 1.8em;
+        padding: 0px 10px;
+    }
 }

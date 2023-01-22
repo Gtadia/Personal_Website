@@ -6,16 +6,17 @@
         
         <meta name="viewport" content="width=device-width, initial-scale=0.86, maximum-scale=5.0, minimum-scale=0.86">
 
-        <title>Projects</title>
+        <title>Portfolio</title>
         <link rel="icon" type="image/x-icon" href="images/My_Logo.png"> 
 
+        <link rel="stylesheet" href="css/portfolio.css">
         <link rel="stylesheet" href="css/subpages-styles.css">
         <link rel="stylesheet" href="css/nav.css">
-        <link rel="stylesheet" href="css/show-on-scroll.css">
         <link rel="stylesheet" href="css/text.css">
         <link rel="stylesheet" href="css/images.css">
         <link rel="stylesheet" href="css/detail_card_and_center.css">
-        <link rel="stylesheet" href="css/animiations.css">
+        <link rel="stylesheet" href="css/animations.css">
+        <link rel="stylesheet" href="css/buttons.css">
     </head>
 
     <header>
@@ -32,7 +33,7 @@
                         <li><a class="link" href="index.html">Home</a></li>
                         <li>
                             <div class="submenu_with_dropdown">
-                                <a class="link" href="projects.html">Projects</a>
+                                <a class="link" href="portfolio.html">Portfolio</a>
                                 <div class="spacer">
                                     <button class="dropdown_arrowhead" id=0>
                                         <img class="chevron" src="images/chevron.png">
@@ -43,6 +44,7 @@
                                 <li><a class="link" href="software.html">Software</a></li>
                                 <li><a class="link" href="mechanical.html">Mechanical</a></li>
                                 <li><a class="link" href="research.html">Research</a></li>
+                                <li><a class="link" href="internships.html">Internships & Programs</a></li>
                             </ul>
                         </li>
                         <li>
@@ -56,7 +58,7 @@
                             </div>
                             <ul class="dropdown" id=1>
                                 <li><a class="link" href="education.html">Education</a></li>
-                                <li><a class="link" href="internships.html">Internships</a></li>
+                                <li><a class="link" href="achievements.html">Achievements</a></li>
                             </ul>
                         </li>
                         <li><a class="link" href="contact.html">Contact Me</a></li>
@@ -72,7 +74,7 @@
         <!--banner starts-->
         <div class="banner">
             <div class="banner-title">
-                <h1>Projects</h1>
+                <h1>Portfolio</h1>
             </div>
             <div class="banner-image"></div>
         </div>
@@ -82,48 +84,61 @@
         <div class="break-short"></div>
         <!--Break ends-->
 
-        <div class="mid-section">
+        <div class="mid-section center_v2">
             <section class="small-section">
-                <div class="detail_card_v5">
-                    <div class="hidden small-margin overflow-hidden center_v3">
+                <div class="portfolio-card-group">
+                    <div class="stagger-show small-margin overflow-hidden center_v3 hoverDimZoom portfolio-card">
                         <img class="image-background" src="images/CPU.png">
-                        <div class="title-body-button medium-padding">
-                            <h1 class="card-body">Software</h1>
-                            <p class="medium-text-font">I've been programming since 2016 (age 12) and have programmed plenty of different projects. Click the button below to see the list of programs I'm the most proud of.</p>
-                            <a href="software.html"><button class="button-index x-axis-medium-margin" type="button" ><span class="span-1"></span>See Software Projects</button></a>
+                        <div class="title-body-button medium-padding text-align-left">
+                            <h1 class="project-title center_v3">Software</h1>
+                            <p class="medium-text-font center_v3">I've been programming since 2016 (age 12) 
+                                and have programmed plenty of different projects. Click the button 
+                                below to see the list of programs I'm the most proud of.
+                            </p>
+                            <a href="software.html" class="button"><button class="button-1-auto"><span class="span-1"></span>See Software Projects</button></a>
                         </div>
                     </div>
         
-                    <div class="hidden small-margin overflow-hidden center_v3" style="transition-delay: 200ms;">
+                    <div class="stagger-show small-margin overflow-hidden center_v3 hoverDimZoom" style="transition-delay: 200ms;">
                         <img class="image-background" src="images/Engineering_Drawings.png">
-                        <div class="title-body-button medium-padding">
-                            <h1 class="card-body">Mechanical</h1>
-                            <p class="medium-text-font">Ever since I got my 1st 3D printer, I've been working on projects involving mechanical parts. Click the button below to see some of the notable mechanical projects.</p>
-                            <a href="mechanical.html"><button class="button-index x-axis-medium-margin" type="button" ><span class="span-1"></span>See Mechanical Projects</button></a>
+                        <div class="title-body-button medium-padding text-align-left">
+                            <h1 class="project-title center_v3">Mechanical</h1>
+                            <p class="medium-text-font center_v3">Ever since I got my 1st 3D printer, 
+                                I've been working on projects involving mechanical parts. 
+                                Click the button below to see some of the notable mechanical projects.
+                            </p>
+                            <a href="mechanical.html" class="button"><button class="button-1-auto"><span class="span-1"></span>See Mechanical Projects</button></a>
                         </div>
                     </div>
                 </div>
             </section>
 
-            <div class="break-short"></div>
+            <div class="break-portfolio-card"></div>
 
             <section class="small-section">
-                <div class="detail_card_v5">
-                    <div class="hidden small-margin overflow-hidden center_v3">
+                <div class="portfolio-card-group">
+                    <div class="stagger-show small-margin overflow-hidden center_v3 hoverDimZoom">
                         <img class="image-background" src="images/Research.png">
-                        <div class="title-body-button medium-padding">
-                            <h1 class="card-body">Research</h1>
-                            <p class="medium-text-font">Starting from the summer of 2022, I've been working on and have finished a couple of projects. Click the button below to see some of the research I've done.</p>
-                            <a href="research.html"><button class="button-index x-axis-medium-margin" type="button" ><span class="span-1"></span>See Research Projects</button></a>
+                        <div class="title-body-button medium-padding text-align-left">
+                            <h1 class="project-title center_v3">Research</h1>
+                            <p class="medium-text-font center_v3">Starting from the summer of 2022, 
+                                I've been working on and have finished a couple of projects. 
+                                Click the button below to see some of the research I've done.
+                            </p>
+                            <a href="research.html" class="button"><button class="button-1-auto"><span class="span-1"></span>See Research Projects</button></a>
                         </div>
                     </div>
         
-                    <div class="hidden small-margin overflow-hidden center_v1" style="transition-delay: 200ms;">
-                        <img class="image-background" src="images/Coming_Soon.jpg">
-                        <div class="title-body-button medium-padding">
-                            <h1 class="card-body">Community</h1>
-                            <br>
-                            <p class="medium-text-font">Page in Progress</p>
+                    <div class="stagger-show small-margin overflow-hidden center_v3 hoverDimZoom" style="transition-delay: 200ms;">
+                        <img class="image-background" src="images/laptop_on_desk.png">
+                        <div class="title-body-button medium-padding text-align-left">
+                            <h1 class="project-title center_v3">Internships & Programs</h1>
+                            <p class="medium-text-font center_v3">Throughout my academic endeavors,
+                                I have partaken in several internships and programs. 
+                                Click the button below to see some of the programs and 
+                                internships I've done.
+                            </p>
+                            <a href="internships_and_programs.html" class="button"><button class="button-1-auto"><span class="span-1"></span>See Internships & Programs</button></a>
                         </div>
                     </div>
                 </div>
@@ -133,6 +148,6 @@
         <div class="break-short"></div>
 
         <!--JS scripts begins-->
-        <script src="js/show-on-scroll.js"></script> <!--Detects when images are on the viewport/screen (this allows us to have elements show up on the screen when they are in the viewport)-->
+        <script src="js/stagger-show.js"></script>
     </body>
 </html>

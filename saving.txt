@@ -1,0 +1,423 @@
+<div class="break"></div>
+            <!--id=0-->
+            <div class="overflow-visible">
+                <div class="individual-event-detail-card show-on-scroll">
+                    <div class="event-details">
+                        <div style = 'background-image: url("images/Pendulum_Clock.jpeg");'class="image-events"></div>
+
+
+                        <div class="event-info">
+                            <h1>
+                                3D Printed Mechanical Pendulum Clock Escapement 
+                                <div class="text-break"></div>
+                            </h1>
+                            <p>
+                                A fully 3D printed mechaical clock that is powered by weights and the time tracked using a pendulum and clocke escapement.
+                            </p>
+
+                            <div class="chevron-btn-container">
+                                <div class="see-more-see-less-text-events">See More</div>
+
+                                <button class="button-events" id=0>
+                                    <img class="chevron-events" src="images/chevron.png">
+                                </button>
+                            </div>
+                        </div>
+    
+                        <div class="event-description">
+                            <div class="event-description-background-image" style="background-image: url('images/SpaceWallpaper.jpeg');">
+
+                            <div class="event-description-text-container">
+                                <p class="event-description-text">
+                                    Using the Fusion 360 CAD program and my 3D printer (Sovol SV01), I designed and pritned a fully working mechanical clock. The STL files to the clock can be found on my Thangs account.
+                                </p>
+                            </div>
+                            <div class="events_description_btn_container">
+                                <button class="events_description_btn" type="button"><span class="span-1"></span>Pictures</button>
+                                <button class="events_description_btn" type="button"><span class="span-1"></span>Thangs</button>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <!-- id=1-->
+            <div class="overflow-visible">
+                <div class="individual-event-detail-card show-on-scroll">
+                    <div class="event-details">
+                        <div style = 'background-image: url("images/Gravity_Vehicle.jpeg");' class="image-events"></div>
+
+                        <div class="event-info">
+                            <h1>
+                                Gravity Vehicle
+                                <div class="text-break"></div>
+                            </h1>
+                            <p>
+                                A vehicle propelled by gravity and have a breaking system that stops the vehicle after a pre-programmed distance.
+                            </p>
+
+                            <div class="chevron-btn-container">
+                                <div class="see-more-see-less-text-events">See More</div>
+
+                                <button class="button-events" id=1>
+                                    <img class="chevron-events" src="images/chevron.png">
+                                </button>
+                            </div>
+                        </div>
+    
+                        <div class="event-description">
+                            <div class="event-description-background-image" style="background-image: url('images/SpaceWallpaper.jpeg');">
+
+                            <div class="event-description-text-container">
+                                <p class="event-description-text">
+                                    I originally created this vehicle for the 2021 Science Olympiad competition. I designed it using Fusion 360 and built using wood, threaded metal rod and nut, and 3D printed parts for the more specialized parts.  
+                                </p>
+                            </div>
+                            <div class="events_description_btn_container">
+                                <button class="events_description_btn" type="button"><span class="span-1"></span>Pictures</button>
+                                <button class="events_description_btn" type="button"><span class="span-1"></span>Thangs</button>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+<div>
+            <div class="event-category-container overflow-hidden">
+                <!--id=0-->
+                <div class="overflow-visible">
+                    <div class="individual-event-detail-card show-on-scroll">
+                        <div class="event-details">
+                            <div style = 'background-image: url("images/Clock_App.jpg");'class="image-events"></div>
+    
+    
+                            <div class="event-info">
+                                <h1>
+                                    Clock App
+                                    <div class="text-break"></div>
+                                </h1>
+                                <p>
+                                    A clock app that has subsections for the current time, the timer, and a stopwatch
+                                </p>
+    
+                                <div class="chevron-btn-container">
+                                    <div class="see-more-see-less-text-events">See More</div>
+    
+                                    <button class="button-events" id=0>
+                                        <img class="chevron-events" src="images/chevron.png">
+                                    </button>
+                                </div>
+                            </div>
+        
+                            <div class="event-description">
+                                <div class="event-description-background-image" style="background-image: url('images/SpaceWallpaper.jpeg');">
+    
+                                <div class="event-description-text-container">
+                                    <p class="event-description-text">
+                                        The clock app was designed using the Kivy framework. Currently, only the pre-release version of the app has been created (has limited funcitonality, such as only being able to set one timer, the absence of the lap button on the stopwatch, and the absense of the world time tab) and the final versionn is still being worked on.
+                                    </p>
+                                </div>
+                                <div class="events_description_btn_container">
+                                    <!--A webpage with pictures of video of the application working-->
+                                    <div class="center_v2"><a href="https://youtu.be/ZTSWJH87EFI"><button class="events_description_btn" type="button"><span class="span-1"></span>Video</button></a></div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- id=1-->
+                <div class="overflow-visible">
+                    <div class="individual-event-detail-card show-on-scroll ">
+                        <div class="event-details">
+                            <div style = 'background-image: url("images/Number_Base_Conversion_Game.jpg");'class="image-events"></div>
+    
+                            <div class="event-info">
+                                <h1>
+                                    Number System Conversion Game
+                                    <div class="text-break"></div>
+                                </h1>
+                                <p>
+                                    A game where players can practice number conversions from the following number systems: binary, octal, decimal, and hexadecimal
+                                </p>
+    
+                                <div class="chevron-btn-container">
+                                    <div class="see-more-see-less-text-events">See More</div>
+    
+                                    <button class="button-events" id=1>
+                                        <img class="chevron-events" src="images/chevron.png">
+                                    </button>
+                                </div>
+                            </div>
+        
+                            <div class="event-description">
+                                <div class="event-description-background-image" style="background-image: url('images/SpaceWallpaper.jpeg');">
+    
+                                <div class="event-description-text-container">
+                                    <p class="event-description-text">
+                                        Originally created for the Create-Performance-Tasks for the AP Computer Science Principles class, the program was 
+                                        created using Java with the built-in JSwing UI library. The player can choose the number system they want to be 
+                                        given and the number system they want to convert to (for example, binary to decimal), the difficulty, and the number 
+                                        of questions they would like to answer. Once the game begins, the player is greeted to a Kahoot like iterface where 
+                                        the user selects the correct number conversion.
+                                    </p>
+                                </div>
+                                <div class="events_description_btn_container">
+                                    <button class="events_description_btn" type="button"><span class="span-1"></span>More Info</button>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <!--id=2-->
+                <div class="overflow-visible">
+                    <div class="individual-event-detail-card show-on-scroll">
+                        <div class="event-details">
+                            <div style = 'background-image: url("images/Triangulation.jpeg");'class="image-events"></div>
+    
+    
+                            <div class="event-info">
+                                <h1>
+                                    Geolocator Using Antenna Triangulation
+                                    <div class="text-break"></div>
+                                </h1>
+                                <p>
+                                    <br>Finding the location of a device using the triangulation of antenna signals from three different devices transmitting the signal. 
+                                </p>
+    
+                                <div class="chevron-btn-container">
+                                    <div class="see-more-see-less-text-events">See More</div>
+    
+                                    <button class="button-events" id=2>
+                                        <img class="chevron-events" src="images/chevron.png">
+                                    </button>
+                                </div>
+                            </div>
+        
+                            <div class="event-description">
+                                <div class="event-description-background-image" style="background-image: url('images/SpaceWallpaper.jpeg');">
+    
+                                <div class="event-description-text-container">
+                                    <p class="event-description-text">
+                                        The project utilizes the Scapy Python library, a Raspberry Pi, and 3 Wi-Fi 
+                                        range extenders transmitting a 2.4GHz signal. Currently, the 3 Wi-Fi rangee 
+                                        extenders are placed 10ft apart from each other to create a triangular area 
+                                        where location of the Raspberry Pi can be detected through a program running 
+                                        on the Rpasberry Pi. However, the final goal of the project would be reverse 
+                                        the roles. The Raspberry Pi will have 3+ antennas receiving signals and a 
+                                        single transmitting antenna in the middle of those three antennas. The goal 
+                                        would be detect other Raspberry Pis through the singal that it's transmitting 
+                                        using the 3+ receiving antennas. 
+                                    </p>
+                                </div>
+                                <div class="events_description_btn_container">
+                                    <button class="events_description_btn" type="button"><span class="span-1"></span>More Info</button>     <!--A webpage with pictures of video of the application working-->
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <!--id=3-->
+                <div class="overflow-visible">
+                    <div class="individual-event-detail-card show-on-scroll">
+                        <div class="event-details">
+                            <div style = 'background-image: url("images/Music_Sheet.jpeg");'class="image-events"></div>
+    
+    
+                            <div class="event-info">
+                                <h1>
+                                    Music Sheet Image to MIDI File Converter (Under Active Development)
+                                    <div class="text-break"></div>
+                                </h1>
+                                <p>
+                                    <br>A program that is able to take a picture of a music sheet and convert it to a MIDI file so that the user can hear what the music piece sounds like before they play it.
+                                </p>
+    
+                                <div class="chevron-btn-container">
+                                    <div class="see-more-see-less-text-events">See More</div>
+    
+                                    <button class="button-events" id=3>
+                                        <img class="chevron-events" src="images/chevron.png">
+                                    </button>
+                                </div>
+                            </div>
+        
+                            <div class="event-description">
+                                <div class="event-description-background-image" style="background-image: url('images/SpaceWallpaper.jpeg');">
+    
+                                <div class="event-description-text-container">
+                                    <p class="event-description-text">
+                                        The program is going to utilize the PyTorch machine learning library to 
+                                        train a model that is capable of detecting the different legends on the 
+                                        music sheet—the notes, the key changes, the timing, etc.—and inform the 
+                                        computer about it. Once it's done that, it takes the data that it's 
+                                        detected and use it to create the MIDI file to play the piece back to the user.
+                                    </p>
+                                </div>
+                                <div class="events_description_btn_container">
+                                    <button class="events_description_btn" type="button"><span class="span-1"></span>More Info</button>     <!--A webpage with pictures of video of the application working-->
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+<div>
+            <div class="event-category-container overflow-hidden">
+                <!--id=0-->
+                <div class="overflow-visible">
+                    <div class="individual-event-detail-card show-on-scroll">
+                        <div class="event-details">
+                            <div style = 'background-image: url("images/bamboo_straws.jpeg");'class="image-events"></div>
+    
+    
+                            <div class="event-info">
+                                <h1>
+                                    Why Paper Straws Suck: Bamboo Straw Supremacy
+                                    <div class="text-break"></div>
+                                </h1>
+                                <p>
+                                    Plastic straws, while durable and easy to manufacture, is 
+                                    negatively impacting the environment when it is deposed of 
+                                    imporperly. This research paper aims to find whether plastic 
+                                    straw alternatives, namely bamboo, are viable along with their 
+                                    benefits and downsides. 
+                                </p>
+    
+                                <div class="chevron-btn-container">
+                                    <div class="see-more-see-less-text-events">See More</div>
+    
+                                    <button class="button-events" id=0>
+                                        <img class="chevron-events" src="images/chevron.png">
+                                    </button>
+                                </div>
+                            </div>
+        
+                            <div class="event-description">
+                                <div class="event-description-background-image" style="background-image: url('images/SpaceWallpaper.jpeg');">
+    
+                                <div class="event-description-text-container">
+                                    <p class="event-description-text">
+                                        The research was conducted as a part of the MITES Semester (Minority 
+                                        Introduction to Engineering and Science), formerly MOSTEC (MIT Online 
+                                        Science Technology and Engineering Community), for the material science 
+                                        project course. Paper straws and bamboo straws were tested for their 
+                                        impact resistance, water absorbity, and many other properties that might 
+                                        impact the use of the product. If you want to learn more about the project, 
+                                        the PDF of the research paper is linked down below.
+                                    </p>
+                                </div>
+                                <div class="events_description_btn_container">
+                                    <a href="PDF/Why Paper Straw Suck-Bamboo Straw Supremacy.pdf"><button class="events_description_btn" type="button"><span class="span-1"></span>More Info</button></a>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- id=1-->
+                <div class="overflow-visible">
+                    <div class="individual-event-detail-card show-on-scroll">
+                        <div class="event-details">
+                            <div style = 'background-image: url("images/Rice.jpeg");'class="image-events"></div>
+    
+                            <div class="event-info">
+                                <h1>
+                                    The Impact of Emotion Expressed in Words and Tone-of-Voice on Grains of Rice
+                                    <div class="text-break"></div>
+                                </h1>
+                                <p>
+                                    Tested the impact of words spoken in different emotions expressed in the tone-of-voice on grains of rice. My sister, who worked on the project with me, and I hypothesized that the only the emotions impacts the grains of rice. 
+                                </p>
+    
+                                <div class="chevron-btn-container">
+                                    <div class="see-more-see-less-text-events">See More</div>
+    
+                                    <button class="button-events" id=1>
+                                        <img class="chevron-events" src="images/chevron.png">
+                                    </button>
+                                </div>
+                            </div>
+        
+                            <div class="event-description">
+                                <div class="event-description-background-image" style="background-image: url('images/SpaceWallpaper.jpeg');">
+    
+                                <div class="event-description-text-container">
+                                    <p class="event-description-text">
+                                        Inspired by other research done on the impact of emotions expressed in words 
+                                        and the tone-of-voice on other non-human subjects, such as water and other 
+                                        plant products, my sister and I worked on this project together to test if 
+                                        the results are reproduceable in grains of rice as well.
+                                    </p>
+                                </div>
+                                <div class="events_description_btn_container">
+                                    <button class="events_description_btn" type="button"><span class="span-1"></span>Rules</button>
+                                    <button class="events_description_btn" type="button"><span class="span-1"></span>More Info</button>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <!--Clock App ends-->
+            </div>
+        </div>
+
+
+
+
+
+
+
+
+
+
+
+
+
+        <div class="detail_card_v3">
+            <div class="center_v3">
+                <h1 class="center_v2">Sharc Lab</h1>
+                
+                <p class="text_v2 center_v2">
+                    Started on late August of 2022, I took on an internship with Sharc Lab @ Georgia Institute of Technology. In the lab, I'm part of the team that is working on developing an Implicit Neural Representation (INR). I'm still working on the project with this lab. 
+                </p>
+            </div>
+
+            <img class="image img_v2 slide-up-show" src="images/Sharc_Lab.png">
+        </div>

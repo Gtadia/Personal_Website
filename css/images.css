@@ -9,6 +9,11 @@
     height: 90%;
 }
 
+.image-fit-container {
+    width: 100%;
+    height: auto;
+  }
+
 .image-background {
     position: absolute;
     height: 100%;
@@ -17,7 +22,21 @@
     transform: translate(-50%, -50%);
     z-index: -2;
     filter: blur(5px) brightness(50%);
+    transition: transform 0.1s;
 }
+
+.hoverDimZoom:hover > .image-background{
+    aspect-ratio: 1;
+    pointer-events: none;
+    
+    /* -webkit-filter: brightness(0.5);
+    filter: brightness(0.5);
+     */
+    -webkit-filter: blur(5px) brightness(80%);
+    filter: blur(5px) brightness(20%);
+  
+    transform: translate(-50%, -50%) scale(110%); 
+} 
 
 .img-plain {
     max-width: 600px; 

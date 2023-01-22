@@ -14,21 +14,6 @@
     }
 }
 
-@media (min-width: 1300px) {
-    .mid-section {
-        display: flex;
-        justify-content: center;
-        align-items: center;
-        flex-direction: column;
-    }
-    .small-section {
-        max-width: 1300px;
-    }
-    .large-section {
-        max-width: 1680px;
-    }
-}
-
 /* Gradient Background */
 body {	
 	background-color: #131316;
@@ -57,7 +42,7 @@ body {
     background-color: white;
 
     width: 100%;
-    height: 8vh;
+    height: 1.5em;
 
     padding: 50px 0;
     display: flex;
@@ -165,44 +150,6 @@ body {
         animation: spin_words 12s infinite; 
     }
 }
-
-.button-margin {
-    margin: 20px;
-}
-
-.button-index {
-    width: 200px; 
-    padding: 15px 0;
-    text-align: center;
-    /* margin: 20px; */
-    border-radius: 25px;
-    font-weight: bold;
-    border: 2px solid #009688;
-    background: transparent; 
-    color: #fff;
-    cursor: pointer;
-    position: relative; 
-    overflow: hidden; 
-}
-.span-1{
-    background: #009688;
-    height: 100%; 
-    width: 0; 
-    border-radius: 25px; 
-    position: absolute; 
-    left: 0;
-    bottom: 0; 
-    z-index: -1;
-    transition: 0.5s; 
-    z-index: -1;  
-}
-.sign-up-btn {
-    max-width: 150px;
-}
-button:hover span{
-    width: 100%;
-}
-
 
 /* slideshow stuff*/
 .slideshow_images {
@@ -323,16 +270,6 @@ button:hover span{
     height: 20vh;
     background: transparent; 
 }
-
-.break-short {
-    position: relative; 
-    width: 100%;
-    height: 5vh;
-    background: transparent;  
-}
-
-
-
 
 /* miscellaneous */
 @media (max-width: 550px) {
