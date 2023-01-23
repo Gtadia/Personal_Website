@@ -46,22 +46,22 @@
 }
   
 .project-image-container {
-width: 100%;
-height: auto;
+    width: 100%;
+    height: auto;
 
-display: flex;
-justify-self: center;
-align-items: center;
+    display: flex;
+    justify-self: center;
+    align-items: center;
 }
 
 .project-center {
-width: 100%; 
-height: auto;
+    width: 100%; 
+    height: auto;
 
-display: flex;
-flex-direction: column; 
+    display: flex;
+    flex-direction: column; 
 
-align-items: center;
+    align-items: center;
 }
 
 @media (max-width: 1250px) {

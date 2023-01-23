@@ -108,7 +108,7 @@
 }
 
 .link {
-    white-space: initial;
+    white-space: nowrap;
     position: relative;
     width: fit-content;
     height: fit-content;
@@ -193,6 +193,13 @@
     }
     .hamburger-menu[aria-expanded="true"] {
         background-image: url(../images/Icon_Close.png);
+    }
+
+    .link {
+        white-space: initial;
+        position: relative;
+        width: fit-content;
+        height: fit-content;
     }
 
     .spacer {

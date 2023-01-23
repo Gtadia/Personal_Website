@@ -1,0 +1,73 @@
+.portfolio-page-break {
+    height: 100px;
+    width: 100%;
+}
+
+.portfolio-page-align-center {
+    display: flex;
+
+    width: 100%;
+    height: auto;
+
+    flex-direction: column;
+    align-items: center;
+}
+
+.portfolio-page-center {
+    display: flex;
+    width: 1000px;
+
+    flex-direction: column;
+    text-align: normal;
+}
+
+.portfolio-page-image-container {
+    width: 100%;
+    height: auto;
+
+    display: flex;
+    justify-self: center;
+    align-items: center;
+}
+
+.title-text {
+    font-family:'Poppins', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+    font-weight: 900;
+    font-size: 50px;
+    color: white;
+    /* text-align: left; */
+}
+
+.portfolio-page-center-info {
+    font-family:'Poppins', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+    word-spacing: 0.25em;
+    line-height: 150%;
+    font-weight: 500;
+    font-size: 25px;
+    color: white;
+}
+
+.image-description{
+    width: 100%;
+    height: fit-content;
+    align-items: center;
+
+    font-family:'Poppins', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+    font-weight: 400;
+    font-size: 23px;
+    color: rgb(180, 180, 180);
+}
+@media (max-width: 1250px) {
+
+}
+
+@media (max-width: 600px) {
+    .portfolio-page-image-container {
+        width: 90%;
+        height: auto;
+        
+        display: flex;
+        justify-self: center;
+        align-items: center;
+    }
+}
