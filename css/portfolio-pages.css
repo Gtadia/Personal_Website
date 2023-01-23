@@ -58,7 +58,14 @@
     color: rgb(180, 180, 180);
 }
 @media (max-width: 1250px) {
-
+    .portfolio-page-image-container {
+        width: 90%;
+        height: auto;
+        
+        display: flex;
+        justify-self: center;
+        align-items: center;
+    }
 }
 
 @media (max-width: 600px) {
