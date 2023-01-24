@@ -36,6 +36,17 @@
     align-items: center;
 }
 
+.portfolio-page-image-container-60 {
+    width: 100%;
+    height: 600px;
+
+    overflow: hidden;
+
+    display: flex;
+    justify-self: center;
+    align-items: center;
+}
+
 .title-text {
     font-family:'Poppins', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
     font-weight: 900;
@@ -82,6 +93,10 @@
         flex-direction: column;
         text-align: normal;
     }
+
+    .portfolio-page-image-container-60 {
+        height: 400px;
+    }
 }
 
 @media (max-width: 800px) {
@@ -91,6 +106,10 @@
     
         flex-direction: column;
         text-align: normal;
+    }
+
+    .portfolio-page-image-container-60 {
+        height: 350px;
     }
 }
 
@@ -106,5 +125,9 @@
     .portfolio-page-break {
         height: 80px;
         width: 100%;
+    }
+
+    .portfolio-page-image-container-60 {
+        height: 300px;
     }
 }
