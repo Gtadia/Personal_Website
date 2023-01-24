@@ -5,9 +5,9 @@ for (var i = 0; i <= btnCount; i += 1) {
   btn[i].onclick = function(e) {
     var num = (this.id);
 
-        var events_dropdown = document.querySelectorAll(".event-description")[num];
-        var Chevron = document.querySelectorAll(".chevron-events")[num];
-        var see_more_see_less_text = document.querySelectorAll(".see-more-see-less-text-events")[num];
+        var events_dropdown = document.querySelectorAll(".see-more-description")[num];
+        var Chevron = document.querySelectorAll(".see-more-chevron")[num];
+        var see_more_see_less_text = document.querySelectorAll(".see-more-text")[num];
 
         events_dropdown.classList.toggle("expanded");
         Chevron.classList.toggle("rotate");

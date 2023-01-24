@@ -11,11 +11,12 @@
 
         <link rel="stylesheet" href="css/subpages-styles.css">
         <link rel="stylesheet" href="css/nav.css">
-                <link rel="stylesheet" href="css/animations.css">
+        <link rel="stylesheet" href="css/animations.css">
         <link rel="stylesheet" href="css/buttons.css">
         <link rel="stylesheet" href="css/text.css">
         <link rel="stylesheet" href="css/images.css">
         <link rel="stylesheet" href="css/detail_card_and_center.css">
+        <link rel="stylesheet" href="css/about-me.css">
     </head>
 
     <!--navigation bar starts-->
@@ -85,21 +86,28 @@
         <!--Break starts-->
         <div class="break-short"></div>
         <!--Break ends-->
+        <div class="mid-section center_v4">
+            <section class="small-section">
+                <div class="about-me-horizontal-card" style="align-items: center;">
+                    <div class="center_v1 ">
+                        <img class="image-90" style="max-width: 600px; " src="images/me cropped.jpg">
+                    </div>
 
-        <div class="detail_card_v3">
-            <div class="center_v3">
-                <h1 class="center_v2">Hello there 👋</h1>
-                
-                <p class="text_v2 center_v2">
-                    I'm Min Han, driven and motivated to achieve goals and do good in the world. <br><br>
-                    Things that interests me are computers, chemistry, mathematics, physics, mechanical engineering, and other cool STEM subjects (Even if that subject is civil engineering).
-                </p>
-            </div>
-
-            <img class="image img_v2 slide-up-show" src="images/me.jpg">
+                    <div style="display: flex; flex-direction: column; color: white; overflow: hidden; padding: 1em 3em;">
+                        <h1 class="about-me-card-title stagger-show">Hello there 👋</h1>
+                        <div class="about-me-page-break-shorter"></div>
+                        <p class="center_v3 medium-text-font stagger-show" style="transition-delay: 100ms; overflow: hidden; ">
+                            I'm Min Han, driven and motivated to achieve goals and do good in the world. <br>
+                            Things that interests me are computers, chemistry, mathematics, physics, mechanical engineering, and other cool STEM subjects (Even if that subject is civil engineering).
+                        </p>
+                    </div>
+                </div>
+            </section>
         </div>
+        
+        <div class="break-short"></div>
     
         <!--JS scripts begins-->
-        <script src="js/slide-up-show.js"></script> <!--Detects when images are on the viewport/screen (this allows us to have elements show up on the screen when they are in the viewport)-->
+        <script src="js/stagger-show.js"></script>
     </body>
 </html>
