@@ -30,6 +30,7 @@
 
     flex-direction: column;
     align-items: center;
+    justify-self: center;
 }
 
 .about-me-page-container {
@@ -252,7 +253,7 @@
 
 
 @media (max-width: 1250px) {
-    .about-me-page-center {
+    .about-me-page-align-center {
         display: flex;
         width: 750px;
     
@@ -276,7 +277,7 @@
 }
 
 @media (max-width: 800px) {
-    .about-me-page-center {
+    .about-me-page-align-center {
         display: flex;
         width: 550px;
     
@@ -287,10 +288,19 @@
     .about-me-page-image-container-60 {
         height: 350px;
     }
+    .about-me-page-container {
+        width: 100%;
+    }
+    .about-me-page-info {
+        width: 400px;
+    }
+    .about-me-page-info-list {
+        align-items: center;
+    }
 }
 
 @media (max-width: 600px) {
-    .about-me-page-center {
+    .about-me-page-align-center {
         display: flex;
         width: 400px;
     
@@ -307,8 +317,14 @@
         height: 300px;
     }
 
+    .about-me-page-info {
+        width: 95%;
+    }
+
     .about-me-card-title {
         font-size: 3em;
     }
-
+    .about-me-page-container {
+        width: 350px;
+    }
 }
