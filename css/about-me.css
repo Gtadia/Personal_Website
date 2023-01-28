@@ -191,12 +191,8 @@
     max-height: 100rem;
 }
 
-.see-more-text-container{
-    padding-top: 2.5em; 
-    z-index: 3;
-}
-
 .see-more-text-container {
+    padding-top: 2.5em; 
     display: grid; 
     grid-template-columns: minmax(3em, 30%) auto;
     grid-auto-rows: minmax(30px, auto);
@@ -277,6 +273,15 @@
 }
 
 @media (max-width: 800px) {
+    .see-more-text-container {
+        display: flex; 
+        flex-direction: column;
+    }
+
+    .see-more-text-padding {
+        padding: 0.8em 0 0 0;
+    }
+
     .about-me-page-align-center {
         display: flex;
         width: 550px;
