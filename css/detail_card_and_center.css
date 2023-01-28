@@ -231,6 +231,7 @@
         color: white;
     }
 
+
     .large-padding{
         padding: 3vw;
     }
@@ -273,10 +274,11 @@
     }
 
     .horizontal_card {    
-        display: grid;
-        grid-template-columns: 500px;
-        grid-template-rows: 500px 500px;
-        color: white;
+        display: flex;
+        width: 450px;
+        height: fit-content;
+        flex-direction: column;
+        gap: 1em;
     }
 
     .project .title-body-button {
@@ -294,11 +296,16 @@
 }
 
 @media (max-width: 600px) {
-    .horizontal_card {    
+    /* .horizontal_card {    
         display: grid;
         grid-template-columns: 400px;
         grid-template-rows: 400px 400px;
         color: white;
+    } */
+
+    .horizontal_card {    
+        display: flex;
+        width: 400px;
     }
 
     .button-index {

@@ -1,3 +1,7 @@
+:root {
+    --cool-index-card-height: 500px;
+    --hobby-card-width: 480px;
+}
 *{
     box-sizing: border-box;
     margin: 0;
@@ -31,13 +35,52 @@ body {
     grid-auto-rows: 20% 60% 20%;
 }
 
-@media (max-width: 600px) {
+@media (max-width: 1100px) {
     .index-title-body-button {
-        display: grid;
-        width: 100%;
-        height: 80%;
-        grid-auto-rows: 25% 50% 25%;
+            display: flex;
+            flex-direction: column;
+            row-gap: 1.5em;
+            height: auto;
     }
+}
+
+.main-hobby-cards-container {
+    /* Container for the three cards */
+    display: flex;
+    flex-direction: row;
+    gap: 2em;
+    align-items: flex-start;
+    justify-content: center;
+}
+
+.index-title-body {
+    width: var(--hobby-card-width);
+    display: flex;
+    flex-direction: column;
+    row-gap: 1em;
+    height: auto;
+}
+
+.hobby-title {
+    color: white;
+    font-size: 3em;
+    font-weight: 800;
+    text-align: center;
+}
+
+.hobby-card-container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.hobby-image-container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    overflow: hidden;
+    width: var(--hobby-card-width);
+    height: var(--hobby-card-width);
 }
 
 .PlaceInCenter{
@@ -282,10 +325,11 @@ body {
 }
 
 .cool-index-cards {
-    width: 500px; 
-    height: 500px; 
+    width: var(--cool-index-card-height);; 
+    height: var(--cool-index-card-height);; 
     display: flex;
     flex-direction: column;
+    position: absolute;
 
     justify-content: center;
     align-self: center;
@@ -315,7 +359,6 @@ body {
 }
 
 .cool-card-1 {
-    position: absolute;
     bottom: 0;
     right: 0;
 }
@@ -324,24 +367,20 @@ body {
 }
 
 .cool-card-2 {
-    position: absolute;
-    top: calc(50% - 250px);
-    left: calc(50% - 250px); 
+    top: calc(50% - var(--cool-index-card-height)/2);
+    left: calc(50% - var(--cool-index-card-height)/2); 
 }
 .cool-card-2:hover {
     z-index: 10;
 }
 
 .cool-card-3 {
-    position: absolute;
     top: 0;
     left: 0;
 }
 .cool-card-3:hover {
     z-index: 10;
 }
-
-
 
 /* detail_cards that have additional styling on its texts/images/buttons */
 .detail_card_v2 h1{
@@ -350,8 +389,69 @@ body {
 .detail_card_v3.center_v1.image.is-visible {
     height: 10000px;
 }
-/* miscellaneous */
+
+@media (max-width: 1600px) {
+    :root {
+        --cool-index-card-height: 440px;
+        --hobby-card-width: 400px;
+    }
+    .cool-index-cards {
+        width: var(--cool-index-card-height);
+        height: var(--cool-index-card-height);
+    }
+    .cool-index {
+        width: 1000px;
+        height: 680px;
+    }
+
+    .hobby-title {
+        font-size: 2.5em;
+    }
+    
+}
+@media (max-width: 1450px) {
+    :root {
+        --hobby-card-width: 320px;
+    }
+}
+@media (max-width: 1050px) {
+    :root {
+        --hobby-card-width: 500px;
+    }
+    .cool-index-cards {
+        position: relative;
+        width: var(--cool-index-card-height);
+        height: var(--cool-index-card-height);
+    }
+    .cool-card-1, .cool-card-2, .cool-card-3 {
+        padding: 1em;
+        top: 0;
+        left: 0;
+        bottom: 0;
+        right: 0;
+    }
+
+    .cool-index {
+        width: 100%;
+        height: fit-content;
+        display: flex;
+        flex-direction: column;
+        gap: 2.5em;
+
+        justify-content: center;
+        align-items: center;
+    }
+
+    .main-hobby-cards-container {
+        /* Container for the three cards */
+        flex-direction: column;
+    }
+}
 @media (max-width: 550px) {
+    :root {
+        --cool-index-card-height: 350px;
+        --hobby-card-width: 350px;
+    }
     .detail_card_v2 {
         display: grid;
         grid-template-columns: 1fr;
@@ -362,7 +462,7 @@ body {
 
     .index-break {
         position: relative; 
-        height: 4em;
+        height: 8em;
         width: 100%;
     }
 }

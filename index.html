@@ -1,12 +1,10 @@
 <!DOCTYPE html>
-<html lang="en"> 
+<html> 
     <head> 
         <meta http-equiv="pragma" content="no-cache"/>
         <meta charset="UTF-8"> 
 
-        <!--Allows the webpage to work with mobile (well, kind of so don't touch this)-->
         <meta name="viewport" content="width=device-width, initial-scale=0.86, maximum-scale=5.0, minimum-scale=0.86">
-        <!---->
 
         <title>Home Page</title>
         <link rel="icon" type="image/x-icon" href="images/My_Logo.png"> 
@@ -21,59 +19,37 @@
         <link rel="stylesheet" href="css/buttons.css">
     </head>
 
-    <!--navigation bar starts-->
     <header>
-        <!--The long hoorizontal black bar across the top and the background (and only the black bar)-->
         <div class="header-blur"></div>
-
-        <!--All the elements that make up the navigation bar (except for the black horizontal bar behind these elements)-->
         <div class="navigation_bar">
             <div class="header-logo">
-                <a href="index.html"><img src="images/My_Logo.png" class="logo"></a>
+                <a href ="index.html"><img src="images/My_Logo.png" class="logo"></a>
             </div>  
             <link rel="icon" type="image/x-icon" href="images/My_Logo.png"> 
-            <!--When the browser window gets to a certain size, the hamburger menu bar icon appears and all of the subpages on the navigation bar appears only when this button is pressed-->
             <buttton class="hamburger-menu button-nav" aria-controls="primary-navigation" aria-expanded="false"></buttton>
-
-            <!--
-                navbar_subpage is the div that contains the where all of the subpages of the website are contained with("data-visible="false" 
-                and id="primary-navigation" (related with 'class="primary-navigation"') is used to allow for smaller windows/mobile devices/transforms the full, desktop 
-                navigation bar to the hamburger navigaion bar)
-            -->
             <nav class="navigation_bar_subpages_dimensions" data-visible="false" id="primary-navigation">
-                
-                <!--Has the <ul> tag that has all of the subpages of the website-->
                 <div class="navigation_bar_subpages">
-                    <!--The beginning of the <ul> tag that contains all of the subpages of the website-->
                     <ul class="primary-navigation">
-                        <li><a class="link" href="index.html"><div class="link">Home</div></a></li>
-                        <!--The "Events" <li> tag has submenus of its own, therefore having more line of html than the other <li> tags-->
-                        <!--"Events" has the id of 0-->
+                        <li><a class="link-container" href="index.html"><div class="link">Home</div></a></li>
                         <li>
-                            <!--The main div that has the name of the submenu ("Events") on the left and the arrowhead/chevron on the right-->
                             <div class="submenu_with_dropdown">
-                                <!--The <a> tag that opens the main "Events" submenu, not the submenu under "Events" itself-->
-                                <a class="link" href="portfolio.html"><div class="link">Portfolio</div></a>
-                                <!--Because the arrowhead/chevron has a position of absolute, we need the spacer so that the right flexbox has enough space for the chevron-->
+                                <a class="link-container" href="portfolio.html"><div class="link">Portfolio</div></a>
                                 <div class="spacer">
                                     <button class="dropdown_arrowhead" id=0>
                                         <img class="chevron" src="images/chevron.png">
                                     </button>
                                 </div>
                             </div>
-                            
                             <ul class="dropdown" id=0>
-                                <li><a class="link" href="software.html"><div class="link">Software</div></a></li>
-                                <li><a class="link" href="mechanical.html"><div class="link">Mechanical</div></a></li>
-                                <li><a class="link" href="research.html"><div class="link">Research</div></a></li>
-                                <li><a class="link" href="internships_and_programs.html"><div class="link">Internships & Programs</div></a></li>
+                                <li><a class="link-container" href="software.html"><div class="link">Software</div></a></li>
+                                <li><a class="link-container" href="mechanical.html"><div class="link">Mechanical</div></a></li>
+                                <li><a class="link-container" href="research.html"><div class="link">Research</div></a></li>
+                                <li><a class="link-container" href="internships_and_programs.html"><div class="link">Internships & Programs</div></a></li>
                             </ul>
                         </li>
-
-                        <!--"Resources" has the id of 1-->
                         <li>
                             <div class="submenu_with_dropdown">
-                                <a class="link" href="about-me.html"><div class="link">About Me</div></a>
+                                <a class="link-container" href="about-me.html"><div class="link">About Me</div></a>
                                 <div class="spacer">
                                     <button class="dropdown_arrowhead" id=1>
                                         <img class="chevron" src="images/chevron.png">
@@ -81,17 +57,15 @@
                                 </div>
                             </div>
                             <ul class="dropdown" id=1>
-                                <li><a class="link" href="education.html"><div class="link">Education</div></a></li>
-                                <li><a class="link" href="achievements.html"><div class="link">Achievements</div></a></li>
+                                <li><a class="link-container" href="education.html"><div class="link">Education</div></a></li>
+                                <li><a class="link-container" href="achievements.html"><div class="link">Achievements</div></a></li>
                             </ul>
                         </li>
-
-                        <li><a class="link" href="contact.html"><div class="link">Contact Me</div></a></li>
+                        <li><a class="link-container" href="contact.html"><div class="link">Contact Me</div></a></li>
                     </ul>
                 </div>
             </nav>
         </div>
-
         <script src="js/navigation_bar/hamburger_menu.js"></script>
         <script src="js/navigation_bar/dropdown.js"></script>
     </header>
@@ -130,12 +104,12 @@
         <div class="mid-section center_v4">
             <!-- Info Card 1 -->
             <section class="small-section">
-                <div class="horizontal_card" style="align-items: center;">
+                <div class="horizontal_card" style="align-items: center; padding: 0 1em;">
                     <div class="center_v1">
                         <img class="image img-round" src="images/me cropped.jpg">
                     </div>
 
-                    <div class="index-title-body-button">
+                    <div class="index-title-body-button" style="padding: 0 1.5em;">
                         <h1 class="card-title stagger-show"> About me</h1>
                         <p class="center_v3 card-body stagger-show" style="transition-delay: 100ms;">
                             I'm a driven person with the dedication and motivation to achieve great feats.
@@ -147,9 +121,7 @@
                 </div>
             </section>
 
-            <!-- Break -->
             <div class="index-break"></div>
-
 
             <section class="large-section" >
                 <div class="cool-index stagger-show">
@@ -203,56 +175,56 @@
 
             <div class="index-break"></div>
 
-            <!-- Info Card 2 -->
-            <section class="small-section">
-                <div class="horizontal_card" style="align-items: center;">
-                    <div class="center_v1 overflow-hidden">
-                        <img class="image-90 img-plain img-border" src="images/Education.jpeg">
+            <!-- <section class="short-section">
+                <div class="quote-container">
+                    <div class="title">
+                        <h1 class="title-text">My Favorite Quote</h1>
                     </div>
-        
-                    <div class="index-title-body-button">
-                        <h1 class="card-title stagger-show"> Education</h1>
-                        <p class="center_v3 card-body stagger-show" style="transition-delay: 100ms">
-                            A current Alpharetta High School student that likes to learn things at school and on my own.
-                        </p>
-                        <div class="justify-bottom">
-                            <a href="education.html" class="button"><button class="button-index" type="button"><span class="span-1"></span>Education</button></a>   
-                        </div>
-                    </div>            
+                    <div class="cool-index-title text-font-poppins">
+                        Pain is temporary, Glory is forever
+                    </div>
                 </div>
-            </section>
-
-            <!-- Break --> 
-            <div class="index-break"></div>
+            </section> -->
             
             <!--Info Card 3-->
             <section class="large-section">
                 <div class="title">
-                    <h1 class="title-text">More about me</h1>
+                    <h1 class="title-text">My hobbies</h1>
                 </div>
-                <div class="detail_card_v2">
-                    <div class="detail_card_v6 stagger-show">
-                        <img class="image-90 img-plain img-border" src="images/trophy.jpeg">
-                        <h1 class="medium-text-padding center_v2">Accomplishments</h1>
-                        <p class="medium-text-font center_v2">Awards from clubs and personal achievements I have accomplished over the years</p>
-                        <div class="center_v2"><a href="achievements.html" class="button"><button class="button-index button-margin" type="button"><span class="span-1"></span>See More</button></a></div>
+                <div class="main-hobby-cards-container" style="text-align: center;">
+                    <div class="hobby-card-container stagger-show">
+                        <div class="hobby-image-container overflow-hidden">
+                            <img style="width: 100%; scale: 1.5;" src="images/Hobby/Tinkering.jpeg">
+                        </div>
+                        <div class="index-title-body" style="padding-top: 1em;">
+                            <h1 class="hobby-image hobby-title text-font-poppins">Tinkering</h1>
+                            <p class="medium-text-font text-font-poppins">Making things and learning how they work brings me joy and allow me to create cool things that I can call my own.</p>
+                        </div>
                     </div>
                     
-                    <div class="detail_card_v6 stagger-show" style="transition-delay: 200ms">
-                        <img class="image-90 img-plain img-border" src="images/Learning.jpeg">
-                        <h1 class="medium-text-padding center_v2">Education</h1>
-                        <p class="medium-text-font center_v2">The schools I've been to and what I've learned and accomplished from each one</p>
-                        <div class="center_v2"><a href="education.html" class="button"><button class="button-index button-margin" type="button"><span class="span-1"></span>See More</button></a>  </div>
+                    <div class="hobby-card-container stagger-show" style="transition-delay: 200ms">
+                        <div class="hobby-image-container overflow-hidden">
+                            <img style="width: 100%; scale: 1.5;" src="images/Hobby/guitar.jpg">
+                        </div>
+                        <div class="index-title-body" style="padding-top: 1em;">
+                            <h1 class="hobby-image hobby-title text-font-poppins">Playing Guitar</h1>
+                            <p class="medium-text-font text-font-poppins">Making things and learning how they work brings me joy and allow me to create cool things that I can call my own.</p>
+                        </div>
                     </div>
-        
-                    <div class="detail_card_v6 stagger-show" style="transition-delay: 400ms">
-                        <img class="image-90 img-plain img-border" src="images/celebration.jpeg">
-                        <h1 class="medium-text-padding center_v2">Projects</h1>
-                        <p class="medium-text-font center_v2">The several personal projects that I've worked (and currently working) on</p>
-                        <div class="center_v2"><a href="projects.html" class="button"><button class="button-index button-margin" type="button"><span class="span-1"></span>See More</button></a></div>
+
+                    <div class="hobby-card-container stagger-show" style="transition-delay: 400ms">
+                        <div class="hobby-image-container overflow-hidden">
+                            <img style="width: 100%; scale: 1.25;" src="images/Hobby/FunFacts.jpeg">
+                        </div>
+                        <div class="index-title-body" style="padding-top: 1em;">
+                            <h1 class="hobby-title text-font-poppins">Learning Random Facts</h1>
+                            <p class="medium-text-font text-font-poppins">Making things and learning how they work brings me joy and allow me to create cool things that I can call my own.</p>
+                        </div>
                     </div>
                 </div>
-            </section>            
+            </section>   
+            
+            <div style="height: 100px; width: 100%;"></div>
         </div>
 
 
