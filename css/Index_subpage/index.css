@@ -276,6 +276,73 @@ body {
     width: 100%;
 }
 
+.cool-index {
+    width: 1200px;
+    height: 800px;
+}
+
+.cool-index-cards {
+    width: 500px; 
+    height: 500px; 
+    display: flex;
+    flex-direction: column;
+
+    justify-content: center;
+    align-self: center;
+    text-align: center;
+}
+
+.cool-index-title {
+    color: white;
+    font-size: 3em;
+    font-weight: 800;
+}
+
+.cool-index-detail {
+    width: 100%;
+    display: flex; 
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    padding-top: 1em;
+}
+
+.cool-index-detail-text {
+    width: 90%;
+    font-size: 1.8em;
+    font-weight: 500;
+    padding-bottom: 0.7em;
+}
+
+.cool-card-1 {
+    position: absolute;
+    bottom: 0;
+    right: 0;
+}
+.cool-card-1:hover {
+    z-index: 10;
+}
+
+.cool-card-2 {
+    position: absolute;
+    top: calc(50% - 250px);
+    left: calc(50% - 250px); 
+}
+.cool-card-2:hover {
+    z-index: 10;
+}
+
+.cool-card-3 {
+    position: absolute;
+    top: 0;
+    left: 0;
+}
+.cool-card-3:hover {
+    z-index: 10;
+}
+
+
+
 /* detail_cards that have additional styling on its texts/images/buttons */
 .detail_card_v2 h1{
     margin-bottom: 25px;
