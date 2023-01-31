@@ -3,20 +3,22 @@
     <head> 
         <meta http-equiv="pragma" content="no-cache"/>
         <meta charset="UTF-8">
-        
-        <meta name="viewport" content="width=device-width, initial-scale=0.86, maximum-scale=5.0, minimum-scale=0.86">
 
-        <title>Internships</title>
+        <meta name="viewport" content="width=device-width, initial-scale=0.86, maximum-scale=5.0, minimum-scale=0.86">
+        
+        <title>Clock App</title>
         <link rel="icon" type="image/x-icon" href="images/My_Logo.png"> 
 
-        <link rel="stylesheet" href="css/portfolio.css">
+        <link rel="stylesheet" href="css/portfolio-pages.css">
+        <link rel="stylesheet" href="css/slideshow.css">
         <link rel="stylesheet" href="css/subpages-styles.css">
         <link rel="stylesheet" href="css/nav.css">
-                <link rel="stylesheet" href="css/animations.css">
+        <link rel="stylesheet" href="css/animations.css">
         <link rel="stylesheet" href="css/buttons.css">
         <link rel="stylesheet" href="css/text.css">
         <link rel="stylesheet" href="css/images.css">
         <link rel="stylesheet" href="css/detail_card_and_center.css">
+
     </head>
 
     <!--navigation bar starts-->
@@ -73,40 +75,52 @@
     <!--navigation_bar ends-->
 
     <body>
-        <!--banner starts-->
-        <div class="banner">
-            <div class="banner-title">
-                <h1>Internships</h1>
-            </div>
-            <div class="banner-image"></div>
-        </div>
-        <!--banner ends-->
+        <div class="portfolio-page-break"></div>
 
+        <div class="portfolio-page-align-center">
+            <div class="portfolio-page-center">
+                <div class="title-text">Clock App</div>
 
-        <!--Break starts-->
-        <div class="break-short"></div>
-        <!--Break ends-->
+                <div class="break-shorter"></div>
 
-        <div class="project-center">
-            <div class="project slide-up-show">
-                <div class="project-image-container">
-                    <img class="image-fit-container" src="images/Sharc_Lab.png">
+                <div class="portfolio-page-image-container-60" style="display: flex; justify-content: center; align-items: center; background-color: white;">
+                    <img class="image-fit-container-vertical" src="images/Clock-App/ClockApp_Timer.jpg" style="transform: scale(100%);">
                 </div>
-                <div class="portfolio-title-body-button medium-padding">
-                    <h1 class="project-title center_v1">Sharc Lab</h1>
-                    <p class="medium-text-font center_v1">An internship with Sharc Lab @ Georgia Institute of Technology. 
-                        I'm part of the team that is working on developing an Implicit Neural Representation (INR).
-                    </p>
-                    <div class="justify-bottom center_v1">
-                        <a class="button" href="sharc_lab_internship.html"><button class="button-1 x-axis-medium-margin" type="button" ><span class="span-1"></span>See Internship</button></a>  
-                    </div>
+                <div class="image-description">
+                    Timer page on my clock application
                 </div>
-            </div>
-        </div>
 
-        <div class="project-break"></div>
-    
-        <!--JS scripts begins-->
-        <script src="js/slide-up-show.js"></script> 
+                <div class="break-shorter"></div>
+                
+                <div class="portfolio-page-center-info">
+                    I may be one of those few people that prefer to use the timer app on my computer than on my phone. Thankfully,
+                    my Windows PC had that was really convenient to use. However, when I got a mac in 2020, I was dismayed that I couldn't
+                    find a first or third party apps. To solve this problem, I quickly decided that I wanted to create this, in my opinion,
+                    critical application myself.
+                </div>
+
+                <div class="break-short"></div>
+
+                <div class="portfolio-page-subtitle">The Process</div>
+                <div class="portfolio-page-break-shorter"></div>
+                <div class="portfolio-page-center-info">
+                    <li>
+                        I learned the Kivy framework built on Python to develop mobile and computer applications.
+                    </li>
+                    <li>
+                        I learned different functionality in a clocks app (timer, stopwatch, and local time)
+                    </li>
+                    <li>
+                        I tuned the timer and stopwatch to accurately represent the time (optimizing its functionality to prevent
+                        any lag that might result in inaccuracies)
+                    </li>
+                </div>
+
+
+                <div class="break-short"></div>
+            </div>
+        </div>     
+        
+        <script src="js/slideshow.js"></script>
     </body>
 </html>
