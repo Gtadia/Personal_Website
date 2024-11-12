@@ -19,13 +19,13 @@
         <link rel="stylesheet" href="css/about-me.css">
     </head>
 
-    <!--navigation bar starts-->
+
     <header>
         <div class="header-blur"></div>
         <div class="navigation_bar">
             <div class="header-logo">
                 <a href ="index.html"><img src="images/My_Logo.png" class="logo"></a>
-            </div>  
+            </div>
             <link rel="icon" type="image/x-icon" href="images/My_Logo.png"> 
             <buttton class="hamburger-menu button-nav" aria-controls="primary-navigation" aria-expanded="false"></buttton>
             <nav class="navigation_bar_subpages_dimensions" data-visible="false" id="primary-navigation">
@@ -48,20 +48,7 @@
                                 <li><a class="link-container" href="internships_and_programs.html"><div class="link">Internships & Programs</div></a></li>
                             </ul>
                         </li>
-                        <li>
-                            <div class="submenu_with_dropdown">
-                                <a class="link-container" href="about-me.html"><div class="link">About Me</div></a>
-                                <div class="spacer">
-                                    <button class="dropdown_arrowhead" id=1>
-                                        <img class="chevron" src="images/chevron.png">
-                                    </button>
-                                </div>
-                            </div>
-                            <ul class="dropdown" id=1>
-                                <li><a class="link-container" href="education.html"><div class="link">Education</div></a></li>
-                                <li><a class="link-container" href="achievements.html"><div class="link">Achievements</div></a></li>
-                            </ul>
-                        </li>
+                        <li><a class="link-container" href="about-me.html"><div class="link">About Me</div></a></li>
                         <li><a class="link-container" href="contact.html"><div class="link">Contact Me</div></a></li>
                     </ul>
                 </div>
@@ -70,44 +57,54 @@
         <script src="js/navigation_bar/hamburger_menu.js"></script>
         <script src="js/navigation_bar/dropdown.js"></script>
     </header>
-    <!--navigation_bar ends-->
 
-    <body>
-        <!--banner starts-->
-        <div class="banner">
-            <div class="banner-title">
-                <h1>About Me</h1>
-            </div>
-            <div class="banner-image"></div>
-        </div>
-        <!--banner ends-->
+    <div style="margin: 5em;"></div>
+        <section class="about" >
+            <h1>About</h1>
+        </section>
 
+        <section class="education">
+            <h2>Education</h2>
+            <p>Currently, I'm a second-year student at <strong>Georgia Institute of Technology</strong>, studying Computer Engineering. I plan on specializing in the <a href="https://ece.gatech.edu/computing-hardware-emerging-architectures-thread">Computing Hardware & Emerging Architectures</a> thread and the <a href="https://ece.gatech.edu/systems-architecture-thread">Systems & Architecture</a> thread. My projected graduation is May 2027.</p>
+            <h3>Relevant Courses I've taken:</h3>
+            <p>Fundamentals of Digital System Design, Digital Design Lab, Object-Oriented Programming</p>
+            <h3>In Progress:</h3>
+            <p>Data Structures & Algorithms, AI Fundamentals</p>
+        </section>
 
-        <!--Break starts-->
-        <div class="break-short"></div>
-        <!--Break ends-->
-        <div class="mid-section center_v4">
-
-            <section class="small-section">
-                <div class="horizontal_card" style="align-items: center; padding: 0 1em;">
-                    <div class="center_v1">
-                        <img class="image img-round" src="images/me cropped.jpg">
-                    </div>
-
-                    <div class="index-title-body-button" style="padding: 0 1.5em;">
-                        <h1 class="card-title stagger-show">Hello there 👋</h1>
-                        <p class="center_v3 card-body stagger-show" style="transition-delay: 100ms;">
-                            I'm Min Han, driven and motivated to achieve goals and do good in the world. <br>
-                            Things that interests me are computers, chemistry, mathematics, physics, mechanical engineering, and other cool STEM subjects (Even if that subject is civil engineering).
-                        </p>
-                    </div>
+        <section class="skills">
+            <h2>Skills</h2>
+            <div class="skill-list">
+                <div>
+                    <strong>Programming</strong><br>
+                    C/C++, Java, Python, JavaScript
                 </div>
-            </section>
-        </div>
-        
-        <div class="break-short"></div>
+                <div>
+                    <strong>Hardware Prototyping</strong><br>
+                    Arduino, VHDL, SystemVerilog, Breadboarding, Screen Printing, Simulations
+                </div>
+                <div>
+                    <strong>Software</strong><br>
+                    Git, KiCad, Fusion 360,
+                </div>
+                <div>
+                    <strong>Data Analysis</strong><br>
+                    NumPy, Pandas, Matplotlib, MATLAB
+                </div>
+                <div>
+                    <strong>Web/Mobile App Development</strong><br>
+                    HTML, CSS, TypeScript, Node.js, React.js, React Native
+                </div>
+            </div>
+        </section>
     
-        <!--JS scripts begins-->
-        <script src="js/stagger-show.js"></script>
+        <section class="experience">
+            <h2>Experience and Activities</h2>
+            <p>I've picked up several new technical skills, such as rapid prototyping, microcontroller programming, and app development, by attending hackathons.</p>
+
+            <h3>Software</h3>
+            <p>During the summer of 2024, I learned to use React Native and created my own mobile app. More details can be found <a href="#">here</a>.</1></p>
+        </section>
+
     </body>
 </html>

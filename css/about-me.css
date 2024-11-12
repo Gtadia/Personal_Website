@@ -1,335 +1,85 @@
-.about-me-horizontal-card {
-    display: grid;
-    grid-template-columns: 500px;
-    grid-template-rows: 500px 500px;
-    color: white;
+/* Reset some default styles */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: Arial, sans-serif;
 }
 
-.about-me-card-title {
-    font-size: 4em;
-    padding: 0px;
-    overflow-wrap: normal;
+body {
+  background-color: #003741;
+  color: #333;
+  line-height: 1.6;
+  padding: 20px;
 }
 
-.about-me-page-break {
-    height: 100px;
-    width: 100%;
+h1,
+h2,
+h3 {
+  text-align: center;
+  margin-bottom: 20px;
+  color: #4f4f4f;
 }
 
-.about-me-page-break-shorter {
-    position: relative; 
-    height: 1.5em;
-    width: auto;
+.about h1 {
+  font-size: 3em;
 }
 
-.about-me-page-align-center {
-    display: flex;
-
-    width: 100%;
-    height: auto;
-
-    flex-direction: column;
-    align-items: center;
-    justify-self: center;
+section {
+  max-width: 800px;
+  margin: 0 auto 40px;
+  padding: 20px;
+  background-color: #fff;
+  border-radius: 8px;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
 }
 
-.about-me-page-container {
-    display: flex;
-    width: 1000px;
-
-    flex-direction: column;
-    text-align: normal;
+h2 {
+  font-size: 1.8em;
+  margin-bottom: 10px;
 }
 
-.about-me-page-image-container {
-    width: 100%;
-    height: auto;
-
-    display: flex;
-    justify-self: center;
-    align-items: center;
+h3 {
+  font-size: 1.2em;
+  margin-top: 20px;
+  color: #555;
 }
 
-.about-me-page-image-container-60 {
-    width: 100%;
-    height: 600px;
-
-    overflow: hidden;
-
-    display: flex;
-    justify-self: center;
-    align-items: center;
+p {
+  font-size: 1em;
+  margin-bottom: 15px;
 }
 
-.title-text {
-    font-family:'Poppins', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
-    font-weight: 900;
-    font-size: 3em;
-    color: white;
+a {
+  color: #0073e6;
+  text-decoration: none;
 }
 
-.about-me-page-info-list {
-    display: flex;
-    flex-direction: column;
-    
-    width: 100%;
-    height: auto;
-    padding-left: 0.8em;
-
-    align-items: left;
-    justify-content: center;
+a:hover {
+  text-decoration: underline;
 }
 
-.about-me-page-info {
-    display: flex;
-    flex-direction: column;
-
-    width: 600px;
-    height: auto;
+.skills .skill-list {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 20px;
 }
 
-.about-me-page-title {
-    /* display: grid; */
-    display: flex;
-    flex-direction: row;
-
-    width: 100%;
-    height: auto;
+.skills .skill-list div {
+  flex: 1 1 200px;
 }
 
-.about-me-page-image-container {
-    height: 64px;
-    width: 64px;
-    min-width: 60px;
-    min-height: 60px;
+.skills strong {
+  display: block;
+  margin-bottom: 5px;
+  color: #333;
 }
 
-.about-me-page-title-subtitle-split {
-    display: flex;
-    flex-direction: column;
-    text-align: left;
-
-    padding-left: 1em;
-    width: auto;
+.experience p {
+  margin-bottom: 10px;
+  text-align: center;
 }
 
-.about-me-page-info-title {
-    color: white;
-    font-size: 1.5em;
-    font-weight: 650;
-}
-
-.about-me-page-info-subtitle {
-    color: white;
-    font-size: 1em;
-    font-weight: 400;
-
-    padding-top: 0.45em;
-}
-
-
-
-.see-more {
-    display: flex; 
-    justify-self: center;
-    align-self: center;
-
-    padding-top: 1em;
-}
-
-.chevron-container {
-    display: flex;
-    flex-direction: column;
-
-    justify-content: center;
-    align-items: center;
-    text-align: center;
-}
-
-.see-more-text {
-    color: white;
-    font-size: 0.5em;
-    font-weight: 600;
-}
-
-.button-events {
-    background: transparent;
-    border: none;
-    height: auto;
-}
-
-.see-more-chevron {
-    min-width: 20px;
-    width: 20px;
-    padding-top: 5px;
-    transform: rotate(0deg);
-
-    transition: transform 0.25s ease-out;
-    background: transparent;
-    color: transparent;
-}
-
-.see-more-chevron.rotate {
-    transform: rotate(180deg);
-}
-
-.see-more-description {
-    grid-column-start: 1;
-    grid-column-end: 3;
-    max-height: 0px;
-    overflow: hidden;
-    transition: max-height 0.5s ease-in-out;
-    position: relative;
-
-    display: flex; 
-    justify-content: center;
-    flex-direction: column;
-    text-align: center;
-}
-
-.see-more-description.expanded {
-    max-height: 100rem;
-}
-
-.see-more-text-container {
-    padding-top: 2.5em; 
-    display: grid; 
-    grid-template-columns: minmax(3em, 30%) auto;
-    grid-auto-rows: minmax(30px, auto);
-}
-
-.see-more-text-larger {
-    color: white;
-    font-size: 1.6em;
-    font-weight: 400;
-}
-.see-more-text {
-    color: white;
-    font-size: 1em;
-}
-.see-more-text-padding{
-    padding-left: 1em;
-    padding-bottom: 2em;
-}
-
-
-
-
-.about-me-page-subtitle {
-    font-family:'Poppins', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
-    font-weight: 700;
-    font-size: 30px;
-    color: white;
-}
-
-.about-me-page-sublist {
-    margin-left: 2.5em;
-    list-style-type: circle;
-}
-
-.about-me-page-center-info {
-    font-family:'Poppins', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
-    word-spacing: 0.25em;
-    line-height: 150%;
-    font-weight: 500;
-    font-size: 25px;
-    color: white;
-}
-
-.image-description{
-    width: 100%;
-    height: fit-content;
-    align-items: center;
-
-    font-family:'Poppins', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
-    font-weight: 400;
-    font-size: 23px;
-    color: rgb(180, 180, 180);
-}
-
-
-@media (max-width: 1250px) {
-    .about-me-page-align-center {
-        display: flex;
-        width: 750px;
-    
-        flex-direction: column;
-        text-align: normal;
-    }
-
-    .about-me-page-image-container-60 {
-        height: 400px;
-    }
-    .about-me-card-title {
-        font-size: 3.6em;
-    }
-}
-
-@media (max-width: 1024px) {
-    .about-me-horizontal-card {
-        display: flex;
-        flex-direction: column;
-    }
-}
-
-@media (max-width: 800px) {
-    .see-more-text-container {
-        display: flex; 
-        flex-direction: column;
-    }
-
-    .see-more-text-padding {
-        padding: 0.8em 0 0 0;
-    }
-
-    .about-me-page-align-center {
-        display: flex;
-        width: 550px;
-    
-        flex-direction: column;
-        text-align: normal;
-    }
-
-    .about-me-page-image-container-60 {
-        height: 350px;
-    }
-    .about-me-page-container {
-        width: 100%;
-    }
-    .about-me-page-info {
-        width: 400px;
-    }
-    .about-me-page-info-list {
-        align-items: center;
-    }
-}
-
-@media (max-width: 600px) {
-    .about-me-page-align-center {
-        display: flex;
-        width: 400px;
-    
-        flex-direction: column;
-        text-align: normal;
-    }
-
-    .about-me-page-break {
-        height: 80px;
-        width: 100%;
-    }
-
-    .about-me-page-image-container-60 {
-        height: 300px;
-    }
-
-    .about-me-page-info {
-        width: 95%;
-    }
-
-    .about-me-card-title {
-        font-size: 3em;
-    }
-    .about-me-page-container {
-        width: 350px;
-    }
+.education {
+  text-align: center;
 }
